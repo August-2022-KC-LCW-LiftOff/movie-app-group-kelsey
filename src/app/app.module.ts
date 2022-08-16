@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TriggerCategoriesComponent } from './trigger-categories/trigger-categories.component';
+import { AddReviewComponent } from './add-review/add-review.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TriggerCategoriesComponent
+    TriggerCategoriesComponent,
+    AddReviewComponent
   ],
   imports: [
     BrowserModule,
@@ -18,6 +20,7 @@ import { TriggerCategoriesComponent } from './trigger-categories/trigger-categor
         RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'trigger-categories', component: TriggerCategoriesComponent },
+      { path: 'add-review', component: AddReviewComponent },
     ])
   ],
   providers: [],
