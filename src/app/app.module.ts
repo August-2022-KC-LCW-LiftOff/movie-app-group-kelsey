@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TriggerCategoriesComponent } from './trigger-categories/trigger-categories.component';
 import { AddReviewComponent } from './add-review/add-review.component';
-import { FAQPageComponent } from './faq-page/faq-page.component';
+import { FaqPageComponent } from './faq-page/faq-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { FAQPageComponent } from './faq-page/faq-page.component';
     HomeComponent,
     TriggerCategoriesComponent,
     AddReviewComponent,
-    FAQPageComponent
+    FaqPageComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,7 @@ import { FAQPageComponent } from './faq-page/faq-page.component';
       { path: '', component: HomeComponent },
       { path: 'trigger-categories', component: TriggerCategoriesComponent },
       { path: 'add-review', component: AddReviewComponent },
-      { path: 'FAQ-page', component: FAQPageComponent },
+      { path: 'faq-page', component: FaqPageComponent },
     ])
   ],
   providers: [],
