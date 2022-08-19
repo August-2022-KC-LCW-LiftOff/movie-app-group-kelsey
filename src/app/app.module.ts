@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TriggerCategoriesComponent } from './trigger-categories/trigger-categories.component';
 import { AddReviewComponent } from './add-review/add-review.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
-import { SearchComponent } from './search/search.component';
+import { MovieListComponent } from './movie-list/movie-list.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,7 @@ import { SearchComponent } from './search/search.component';
     HomeComponent,
     TriggerCategoriesComponent,
     AddReviewComponent,
-    SearchBarComponent,
-    SearchComponent
+    MovieListComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +23,7 @@ import { SearchComponent } from './search/search.component';
       { path: '', component: HomeComponent },
       { path: 'trigger-categories', component: TriggerCategoriesComponent },
       { path: 'add-review', component: AddReviewComponent },
+      { path: 'movie-list', component: MovieListComponent },
     ])
   ],
   providers: [],
