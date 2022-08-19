@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TriggerCategoriesComponent } from './trigger-categories/trigger-categories.component';
 import { AddReviewComponent } from './add-review/add-review.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TriggerCategoriesComponent,
-    AddReviewComponent
+    AddReviewComponent,
+    SearchBarComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
