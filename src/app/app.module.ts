@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { TriggerCategoriesComponent } from './trigger-categories/trigger-categories.component';
 import { AddReviewComponent } from './add-review/add-review.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
+import { MovieListComponent } from './movie-list/movie-list.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
     TriggerCategoriesComponent,
     AddReviewComponent,
     FaqPageComponent
+    MovieListComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +26,7 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
       { path: 'trigger-categories', component: TriggerCategoriesComponent },
       { path: 'add-review', component: AddReviewComponent },
       { path: 'faq-page', component: FaqPageComponent },
+      { path: 'movie-list', component: MovieListComponent },
     ])
   ],
   providers: [],

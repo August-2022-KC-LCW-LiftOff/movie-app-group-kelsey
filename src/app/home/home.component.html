@@ -2,4 +2,6 @@
 <button [routerLink]="['trigger-categories']">View Trigger Categories</button>
 <button [routerLink]="['add-review']">Create A Review</button>
 <button [routerLink]="['faq-page']">FAQs</button>
+
+<input (keyup.enter)="onSearch()" type = "text" placeholder="Search for a movie..."/>
 <p>home works!</p>
