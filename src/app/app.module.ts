@@ -8,6 +8,7 @@ import { TriggerCategoriesComponent } from './trigger-categories/trigger-categor
 import { AddReviewComponent } from './add-review/add-review.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { MovieListComponent } from './movie-list/movie-list.component';
     HomeComponent,
     TriggerCategoriesComponent,
     AddReviewComponent,
-    FaqPageComponent
-    MovieListComponent
+    FaqPageComponent,
+    MovieListComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
