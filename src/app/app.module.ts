@@ -16,7 +16,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     HomeComponent,
     TriggerCategoriesComponent,
     AddReviewComponent,
-    FaqPageComponent
+    FaqPageComponent,
     MovieListComponent,
     CarouselComponent
   ],
