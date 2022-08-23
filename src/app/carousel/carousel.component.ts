@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class CarouselComponent implements OnInit {
 
   constructor() { }
-
+    movies: any[] = [];
+    recentMovieSearch(){
+      fetch('http://www.omdbapi.com/?i=tt3896198&apikey=9ec16e46') 
+    }
   ngOnInit() {
   }
 
 }
+http://www.omdbapi.com/?i=tt3896198&apikey=9ec16e46
