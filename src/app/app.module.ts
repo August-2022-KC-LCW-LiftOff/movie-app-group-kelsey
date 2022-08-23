@@ -9,6 +9,7 @@ import { AddReviewComponent } from './add-review/add-review.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     AddReviewComponent,
     FaqPageComponent,
     MovieListComponent,
-    CarouselComponent
+    CarouselComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
