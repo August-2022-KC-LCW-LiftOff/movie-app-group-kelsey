@@ -9,6 +9,9 @@ import { AddReviewComponent } from './add-review/add-review.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
+//import { CommentsComponent } from './comments/comments.component';
+//import { CommentsModule } from './comments/comments.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     AddReviewComponent,
     FaqPageComponent,
     MovieListComponent,
-    CarouselComponent
+    CarouselComponent,
+    //CommentsComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { CarouselComponent } from './carousel/carousel.component';
       { path: 'add-review', component: AddReviewComponent },
       { path: 'faq-page', component: FaqPageComponent },
       { path: 'movie-list', component: MovieListComponent },
-    ])
+    ]), //CommentsModule, 
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
