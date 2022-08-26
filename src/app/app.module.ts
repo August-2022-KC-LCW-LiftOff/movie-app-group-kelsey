@@ -15,7 +15,7 @@ import { MovieListComponent } from './movie-list/movie-list.component';
     HomeComponent,
     TriggerCategoriesComponent,
     AddReviewComponent,
-    FaqPageComponent
+    FaqPageComponent,
     MovieListComponent
   ],
   imports: [
