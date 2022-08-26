@@ -1,23 +1,19 @@
 <div class="w-50">
-<div id="carouselExampleControls" class="carousel slide flex w-75" data-bs-ride="carousel">
+<div class="carousel slide flex w-75" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="https://m.media-amazon.com/images/M/MV5BZTAzNWZlNmUtZDEzYi00ZjA5LWIwYjEtZGM1NWE1MjE4YWRhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" alt="...">
+      <div *ngFor="let slide of slides; let i = index">
+        <div [class]="i === activeIndex ? 'carousel-item active' : 'carousel-item'"><img class="d-block w-100" [src]="slide" alt="..."></div>
+        <br>
       </div>
-      <div class="carousel-item">
-        <img src="https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SX300.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_SX300.jpg" class="d-block w-100" alt="...">
-      </div>
+     
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" (click)="onPrev()">
       <span class="carousel-control-prev-icon dark"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <a class="carousel-control-next" role="button" (click)="onNext()" data-slide="next">
       <span class="carousel-control-next-icon text-dark"></span>
       <span class="visually-hidden">Next</span>
-    </button>
+    </a>
   </div>
 </div>
