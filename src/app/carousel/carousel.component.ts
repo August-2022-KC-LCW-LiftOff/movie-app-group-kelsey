@@ -1,4 +1,6 @@
+import { ApiMovieService } from './../api-movie.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-carousel',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  constructor(private movieApi: ApiMovieService) { }
 
   ngOnInit() {
   }

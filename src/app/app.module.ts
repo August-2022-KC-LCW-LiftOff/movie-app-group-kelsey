@@ -10,6 +10,7 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule, 
         RouterModule.forRoot([
       { path: '', component: HomeComponent },
