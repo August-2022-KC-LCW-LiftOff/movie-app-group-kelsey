@@ -12,6 +12,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 //import { CommentsComponent } from './comments/comments.component';
 //import { CommentsModule } from './comments/comments.module';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     FaqPageComponent,
     MovieListComponent,
     CarouselComponent,
+    NavbarComponent,
     //CommentsComponent,
   ],
   imports: [
