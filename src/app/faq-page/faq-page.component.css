@@ -1,18 +1,25 @@
-h1 {
-    
-text-align: center;
-
-}
-
-h2 {
-   text-align: center; 
-}
-
-h3 {
-
+.container-sm {
+    max-width: 540px,
 }
 
 body {
-    position: absolute; 
-    box-sizing: border-box;
-  }
+    font-family: "Merriweather", serif;
+    color: #3A2E39;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+#homebutton {
+
+    text-align: right;
+}
