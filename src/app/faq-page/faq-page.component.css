@@ -2,9 +2,17 @@
     max-width: 540px,
 }
 
-body {
+.merriweather {
     font-family: "Merriweather", serif;
+
+}
+
+.deep-purple {
     color: #3A2E39;
+}
+
+.mustard-yellow {
+    color: #FCBF49;
 }
 
 h1 {
@@ -17,9 +25,4 @@ h2 {
 
 p {
     text-align: justify;
-}
-
-#homebutton {
-
-    text-align: right;
 }
