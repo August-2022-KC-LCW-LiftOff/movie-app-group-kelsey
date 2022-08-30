@@ -11,6 +11,7 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     FaqPageComponent,
     MovieListComponent,
     CarouselComponent,
-    NavbarComponent
+    NavbarComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
