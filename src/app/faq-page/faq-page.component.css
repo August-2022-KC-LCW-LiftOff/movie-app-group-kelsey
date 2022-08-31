@@ -1,0 +1,28 @@
+.container-sm {
+    max-width: 540px,
+}
+
+.merriweather {
+    font-family: "Merriweather", serif;
+
+}
+
+.deep-purple {
+    color: #3A2E39;
+}
+
+.mustard-yellow {
+    color: #FCBF49;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
