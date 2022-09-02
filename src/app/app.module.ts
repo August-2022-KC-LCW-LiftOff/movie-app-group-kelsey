@@ -10,11 +10,8 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
-<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
-=======
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
->>>>>>> main
 
 @NgModule({
   declarations: [
