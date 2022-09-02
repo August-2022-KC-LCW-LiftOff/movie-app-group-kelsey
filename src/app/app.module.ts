@@ -10,6 +10,7 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     FaqPageComponent,
     MovieListComponent,
     CarouselComponent,
-    NavbarComponent
+    NavbarComponent,
+    SignInPageComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { NavbarComponent } from './navbar/navbar.component';
       { path: 'add-review', component: AddReviewComponent },
       { path: 'faq-page', component: FaqPageComponent },
       { path: 'movie-list', component: MovieListComponent },
+      { path: 'sign-in-page', component: SignInPageComponent },
     ])
   ],
   providers: [],
