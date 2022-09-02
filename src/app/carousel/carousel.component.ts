@@ -1,7 +1,8 @@
+import { ApiResponse } from './../types-global';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiMovieService } from '../api-movie.service';
-import { Movie } from '../types-global';
+import { ApiResponse, Movie } from '../types-global';
 
 @Component({
   selector: 'app-carousel',
@@ -36,15 +37,15 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
     if (this.collection==="trending") {
       this.apiMovies.getTrendingMovies().subscribe((data) => {
-        this.trendingMovieData = data.results as Movie[];
+        this.trendingMovieData = data as ApiResponse;
         console.log(this.trendingMovieData);
-        this.slides = this.trendingMovieData.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
+        this.slides = this.trendingMovieData.results.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
       })
     } else {
       this.apiMovies.getUpcomingMovies().subscribe((data) => {
-        this.upcomingMovieData = data.results as Movie[];
+        this.upcomingMovieData = data as ApiResponse;
         console.log(this.upcomingMovieData);
-        this.slides = this.upcomingMovieData.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
+        this.slides = this.upcomingMovieData.results.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
       }) 
     }
   }
