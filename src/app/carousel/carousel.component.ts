@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ApiMovieService } from '../api-movie.service';
+import { Movie } from '../types-global';
 
 @Component({
   selector: 'app-carousel',
@@ -8,12 +10,17 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor(private activatedRoute:ActivatedRoute) {
-    
+  constructor(private activatedRoute:ActivatedRoute,
+    private apiMovies: ApiMovieService) {
    }
-   slides: string[]=[];
-   activeIndex: number = 0;
+
+  slides: string[]=[];
+  activeIndex: number = 0;
+  trendingMovieData = null;
+  upcomingMovieData = null;
+
   @Input() collection:string;
+
   onPrev() {
     if (this.activeIndex > 0) {
       this.activeIndex = this.activeIndex - 1} else {
@@ -26,23 +33,19 @@ export class CarouselComponent implements OnInit {
       this.activeIndex = 0;
     }
   }
-  carouselOneSlides:string[]=[
-    "https://m.media-amazon.com/images/M/MV5BZTAzNWZlNmUtZDEzYi00ZjA5LWIwYjEtZGM1NWE1MjE4YWRhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg", 
-    "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SX300.jpg", 
-    "https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_SX300.jpg"
-  ]
-
-  carouselTwoSlides:string[]=[
-    "https://m.media-amazon.com/images/M/MV5BZTllNDU0ZTItYTYxMC00OTI4LThlNDAtZjNiNzdhMWZiYjNmXkEyXkFqcGdeQXVyNzY1NDgwNjQ@._V1_SX300.jpg", 
-    "https://m.media-amazon.com/images/M/MV5BYzdiOTVjZmQtNjAyNy00YjA2LTk5ZTAtNmJkMGQ5N2RmNjUxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
-    "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-  ]
   ngOnInit() {
     if (this.collection==="trending") {
-      this.slides = this.carouselOneSlides
+      this.apiMovies.getTrendingMovies().subscribe((data) => {
+        this.trendingMovieData = data.results as Movie[];
+        console.log(this.trendingMovieData);
+        this.slides = this.trendingMovieData.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
+      })
     } else {
-      this.slides = this.carouselTwoSlides
+      this.apiMovies.getUpcomingMovies().subscribe((data) => {
+        this.upcomingMovieData = data.results as Movie[];
+        console.log(this.upcomingMovieData);
+        this.slides = this.upcomingMovieData.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
+      }) 
     }
   }
-
 }
