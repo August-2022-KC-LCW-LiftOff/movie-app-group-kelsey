@@ -1,4 +1,3 @@
-import { ApiResponse } from './../types-global';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiMovieService } from '../api-movie.service';
