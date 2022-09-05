@@ -12,6 +12,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
+import { CreateAnAccountComponent } from './create-an-account/create-an-account.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
     MovieListComponent,
     CarouselComponent,
     NavbarComponent,
-    SignInPageComponent
+    SignInPageComponent,
+    CreateAnAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,7 @@ import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
       { path: 'faq-page', component: FaqPageComponent },
       { path: 'movie-list', component: MovieListComponent },
       { path: 'sign-in-page', component: SignInPageComponent },
+      { path: 'create-an-account', component: CreateAnAccountComponent },
     ])
   ],
   providers: [],
