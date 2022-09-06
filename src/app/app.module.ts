@@ -20,7 +20,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     FaqPageComponent,
     MovieListComponent,
     CarouselComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
