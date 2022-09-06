@@ -9,10 +9,14 @@ import { AddReviewComponent } from './add-review/add-review.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
-//import { CommentsComponent } from './comments/comments.component';
-//import { CommentsModule } from './comments/comments.module';
+import { CommentsComponent } from './comments/comments.components';
+import { CommentsModule } from './comments/comments.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CommentFormComponent } from './commentForm/commentForm.component';
+import { CommentComponent } from './comment/comment.component';
+import { CommentsService } from './comments/comments.service';
+import { FormBuilder } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     MovieListComponent,
     CarouselComponent,
     NavbarComponent,
-    //CommentsComponent,
+    CommentsComponent,
+    CommentFormComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
@@ -35,10 +41,9 @@ import { NavbarComponent } from './navbar/navbar.component';
       { path: 'add-review', component: AddReviewComponent },
       { path: 'faq-page', component: FaqPageComponent },
       { path: 'movie-list', component: MovieListComponent },
-    ]), //CommentsModule, 
-    HttpClientModule,
+    ]), HttpClientModule,
   ],
-  providers: [],
+  providers: [CommentsService,CommentFormComponent, FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
