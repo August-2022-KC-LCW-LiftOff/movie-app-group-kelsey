@@ -2,7 +2,8 @@
 <div class="carousel slide flex w-75" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div *ngFor="let slide of slides; let i = index">
-        <div [class]="i === activeIndex ? 'carousel-item active' : 'carousel-item'"><img class="d-block w-100" [src]="slide" alt="..."></div>
+        <div [class]="i === activeIndex ? 'carousel-item active' : 'carousel-item'"><img class="d-block w-100" [src]="slide" alt="...">
+        </div>
         <br>
       </div>
      

@@ -10,6 +10,9 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
+import { CreateAnAccountComponent } from './create-an-account/create-an-account.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +24,14 @@ import { NavbarComponent } from './navbar/navbar.component';
     MovieListComponent,
     CarouselComponent,
     NavbarComponent,
+
+    SignInPageComponent,
+    CreateAnAccountComponent
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule, 
         RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -31,6 +39,8 @@ import { NavbarComponent } from './navbar/navbar.component';
       { path: 'add-review', component: AddReviewComponent },
       { path: 'faq-page', component: FaqPageComponent },
       { path: 'movie-list', component: MovieListComponent },
+      { path: 'sign-in-page', component: SignInPageComponent },
+      { path: 'create-an-account', component: CreateAnAccountComponent },
     ])
   ],
   providers: [],
