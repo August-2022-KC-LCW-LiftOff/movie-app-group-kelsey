@@ -24,8 +24,10 @@ import { CreateAnAccountComponent } from './create-an-account/create-an-account.
     MovieListComponent,
     CarouselComponent,
     NavbarComponent,
+
     SignInPageComponent,
     CreateAnAccountComponent
+
   ],
   imports: [
     BrowserModule,
