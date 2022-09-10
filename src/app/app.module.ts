@@ -17,6 +17,9 @@ import { CommentFormComponent } from './commentForm/commentForm.component';
 import { CommentComponent } from './comment/comment.component';
 import { CommentsService } from './comments/comments.service';
 import { FormBuilder } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
+import { CreateAnAccountComponent } from './create-an-account/create-an-account.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +34,12 @@ import { FormBuilder } from '@angular/forms';
     CommentsComponent,
     CommentFormComponent,
     CommentComponent
+    SignInPageComponent,
+    CreateAnAccountComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule, 
         RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -42,6 +48,9 @@ import { FormBuilder } from '@angular/forms';
       { path: 'faq-page', component: FaqPageComponent },
       { path: 'movie-list', component: MovieListComponent },
     ]), HttpClientModule,
+      { path: 'sign-in-page', component: SignInPageComponent },
+      { path: 'create-an-account', component: CreateAnAccountComponent },
+    ])
   ],
   providers: [CommentsService,CommentFormComponent, FormBuilder],
   bootstrap: [AppComponent]
