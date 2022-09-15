@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Search } from '../search';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private httpClient: HttpClient) { }
 
   onSearch() {this.router.navigate(['movie-list'])}
 

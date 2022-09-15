@@ -10,7 +10,7 @@ import { ApiResponse, Movie } from '../types-global';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor(private activatedRoute:ActivatedRoute,
+  constructor(private activatedRoute: ActivatedRoute,
     private apiMovies: ApiMovieService) {
    }
 
@@ -37,13 +37,11 @@ export class CarouselComponent implements OnInit {
     if (this.collection==="trending") {
       this.apiMovies.getTrendingMovies().subscribe((data) => {
         this.trendingMovieData = data as ApiResponse;
-        console.log(this.trendingMovieData);
         this.slides = this.trendingMovieData.results.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
       })
     } else {
       this.apiMovies.getUpcomingMovies().subscribe((data) => {
         this.upcomingMovieData = data as ApiResponse;
-        console.log(this.upcomingMovieData);
         this.slides = this.upcomingMovieData.results.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
       }) 
     }
