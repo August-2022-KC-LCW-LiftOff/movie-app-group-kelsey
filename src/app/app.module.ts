@@ -19,6 +19,13 @@ import { CommentsService } from './comments/comments.service';
 import { FormBuilder } from '@angular/forms';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { CreateAnAccountComponent } from './create-an-account/create-an-account.component';
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment as env } from '../environments/environment';
+import { LoginButtonComponent } from './components/login-button/login-button.component';
+import { SignupButtonComponent } from './components/signup-button/signup-button.component';
+import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
+import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
+import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +41,17 @@ import { CreateAnAccountComponent } from './create-an-account/create-an-account.
     CommentFormComponent,
     CommentComponent,
     SignInPageComponent,
-    CreateAnAccountComponent
+    CreateAnAccountComponent,
+    LoginButtonComponent,
+    SignupButtonComponent,
+    LogoutButtonComponent,
+    AuthenticationButtonComponent,
+    AuthNavComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    AuthModule.forRoot({...env.auth,}),
     AppRoutingModule, 
         RouterModule.forRoot([
       { path: '', component: HomeComponent },
