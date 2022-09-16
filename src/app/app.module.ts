@@ -26,7 +26,13 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireMessagingModule } from '@angular/fire/compat/messaging';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireFunctionsModule } from '@angular/fire/compat/functions';
-import { environment } from 'src/environments/environment';
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment as env } from '../environments/environment';
+import { LoginButtonComponent } from './components/login-button/login-button.component';
+import { SignupButtonComponent } from './components/signup-button/signup-button.component';
+import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
+import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
+import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
 
 @NgModule({
   declarations: [
@@ -43,19 +49,27 @@ import { environment } from 'src/environments/environment';
     //CommentComponent,
     SignInPageComponent,
     CreateAnAccountComponent,
+    LoginButtonComponent,
+    SignupButtonComponent,
+    LogoutButtonComponent,
+    AuthenticationButtonComponent,
+    AuthNavComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(env.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFireMessagingModule,
     AngularFireDatabaseModule,
     AngularFireFunctionsModule,
-    AppRoutingModule, 
-        RouterModule.forRoot([
+    AppRoutingModule,
+    AuthModule.forRoot({
+      ...env.auth,
+    }),
+    RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'trigger-categories', component: TriggerCategoriesComponent },
       { path: 'add-review', component: AddReviewComponent },
