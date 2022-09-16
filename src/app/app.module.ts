@@ -18,7 +18,7 @@ import { CommentComponent } from './comment/comment.component';
 import { CommentsService } from './comments/comments.service';
 import { FormBuilder } from '@angular/forms';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
-import { CreateAnAccountComponent } from './create-an-account/create-an-account.component';
+import { CreateAnAccountComponent } from './create-an-account/create-an-account.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { CreateAnAccountComponent } from './create-an-account/create-an-account.
     CommentFormComponent,
     CommentComponent,
     SignInPageComponent,
-    CreateAnAccountComponent
+    CreateAnAccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +49,6 @@ import { CreateAnAccountComponent } from './create-an-account/create-an-account.
       { path: 'sign-in-page', component: SignInPageComponent },
       { path: 'create-an-account', component: CreateAnAccountComponent },
     ]), 
-    HttpClientModule,
   ],
   providers: [CommentsService,CommentFormComponent, FormBuilder],
   bootstrap: [AppComponent]
