@@ -9,12 +9,10 @@ import { AddReviewComponent } from './add-review/add-review.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
-//import { CommentsComponent } from './comments/comments.components';
-//import { CommentsModule } from './comments/comments.module';
+import { CommentsModule } from './comments/comments.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CommentFormComponent } from './commentForm/commentForm.component';
-//import { CommentComponent } from './comment/comment.component';
 import { CommentsService } from './comments/comments.service';
 import { FormBuilder } from '@angular/forms';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
@@ -44,9 +42,6 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
     MovieListComponent,
     CarouselComponent,
     NavbarComponent,
-    //CommentsComponent,
-    //CommentFormComponent,
-    //CommentComponent,
     SignInPageComponent,
     CreateAnAccountComponent,
     LoginButtonComponent,
@@ -66,10 +61,12 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
     AngularFireDatabaseModule,
     AngularFireFunctionsModule,
     AppRoutingModule,
+    CommentsModule,
     AuthModule.forRoot({
       ...env.auth,
     }),
-    RouterModule.forRoot([
+    AppRoutingModule, 
+        RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'trigger-categories', component: TriggerCategoriesComponent },
       { path: 'add-review', component: AddReviewComponent },
