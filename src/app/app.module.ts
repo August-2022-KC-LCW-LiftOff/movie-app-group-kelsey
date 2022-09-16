@@ -9,12 +9,10 @@ import { AddReviewComponent } from './add-review/add-review.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { CommentsComponent } from './comments/comments.components';
 import { CommentsModule } from './comments/comments.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CommentFormComponent } from './commentForm/commentForm.component';
-import { CommentComponent } from './comment/comment.component';
 import { CommentsService } from './comments/comments.service';
 import { FormBuilder } from '@angular/forms';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
@@ -37,9 +35,6 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
     MovieListComponent,
     CarouselComponent,
     NavbarComponent,
-    CommentsComponent,
-    CommentFormComponent,
-    CommentComponent,
     SignInPageComponent,
     CreateAnAccountComponent,
     LoginButtonComponent,
@@ -51,6 +46,7 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    CommentsModule,
     AuthModule.forRoot({...env.auth,}),
     AppRoutingModule, 
         RouterModule.forRoot([
@@ -59,7 +55,6 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
       { path: 'add-review', component: AddReviewComponent },
       { path: 'faq-page', component: FaqPageComponent },
       { path: 'movie-list', component: MovieListComponent },
-    ]), HttpClientModule,
       { path: 'sign-in-page', component: SignInPageComponent },
       { path: 'create-an-account', component: CreateAnAccountComponent },
     ]), 

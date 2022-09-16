@@ -18,7 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -121,5 +121,8 @@
         }
       }
     }},
-  "defaultProject": "MovieProject"
+  "defaultProject": "MovieProject",
+  "cli": {
+    "analytics": "505b5909-309e-4032-afac-d9c31eb5bde1"
+  }
 }
