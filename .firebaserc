@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "triggered-f9073": {
+      "hosting": {
+        "MovieProject": [
+          "triggered-f9073"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "triggered-f9073"
+  }
+}

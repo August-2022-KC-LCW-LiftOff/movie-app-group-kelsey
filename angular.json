@@ -118,11 +118,19 @@
               "devServerTarget": "MovieProject:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "MovieProject:build:production",
+            "firebaseProject": "triggered-f9073",
+            "firebaseHostingSite": "triggered-f9073"
+          }
         }
       }
-    }},
-  "defaultProject": "MovieProject",
-  "cli": {
-    "analytics": "505b5909-309e-4032-afac-d9c31eb5bde1"
-  }
+    }
+  },
+  "defaultProject": "MovieProject"
 }

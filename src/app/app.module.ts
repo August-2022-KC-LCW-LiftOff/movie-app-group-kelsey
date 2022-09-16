@@ -17,6 +17,13 @@ import { CommentsService } from './comments/comments.service';
 import { FormBuilder } from '@angular/forms';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { CreateAnAccountComponent } from './create-an-account/create-an-account.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireMessagingModule } from '@angular/fire/compat/messaging';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireFunctionsModule } from '@angular/fire/compat/functions';
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
@@ -41,13 +48,23 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
     SignupButtonComponent,
     LogoutButtonComponent,
     AuthenticationButtonComponent,
-    AuthNavComponent
+    AuthNavComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(env.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFireMessagingModule,
+    AngularFireDatabaseModule,
+    AngularFireFunctionsModule,
+    AppRoutingModule,
     CommentsModule,
-    AuthModule.forRoot({...env.auth,}),
+    AuthModule.forRoot({
+      ...env.auth,
+    }),
     AppRoutingModule, 
         RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -58,7 +75,6 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
       { path: 'sign-in-page', component: SignInPageComponent },
       { path: 'create-an-account', component: CreateAnAccountComponent },
     ]), 
-    HttpClientModule,
   ],
   providers: [CommentsService,CommentFormComponent, FormBuilder],
   bootstrap: [AppComponent]
