@@ -59,13 +59,11 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
       { path: 'add-review', component: AddReviewComponent },
       { path: 'faq-page', component: FaqPageComponent },
       { path: 'movie-list', component: MovieListComponent },
-    ]), HttpClientModule,
       { path: 'sign-in-page', component: SignInPageComponent },
       { path: 'create-an-account', component: CreateAnAccountComponent },
     ]), 
-    HttpClientModule,
   ],
-  providers: [CommentsService,CommentFormComponent, FormBuilder],
+  providers: [CommentsService, CommentFormComponent, FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
