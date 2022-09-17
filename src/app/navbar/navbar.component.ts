@@ -15,6 +15,8 @@ export class NavbarComponent implements OnInit {
 
   onSearch() {this.router.navigate(['movie-list'])}
 
+  onSignIn() {this.router.navigate(['sign-in-page'])}
+
   ngOnInit() {
   }
 
