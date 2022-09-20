@@ -1,12 +1,7 @@
-<div class="w-50">
 <div class="carousel slide flex w-75" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div *ngFor="let slide of slides; let i = index">
-        <div [class]="i === activeIndex ? 'carousel-item active' : 'carousel-item'"><img class="d-block w-100" [src]="slide" alt="...">
-        </div>
-        <br>
+      <div *ngFor="let slide of slides; let i = index" [class]="i === activeIndex ? 'carousel-item active' : 'carousel-item'"><img class="d-block w-100" [src]="slide" alt="...">
       </div>
-     
     </div>
     <button class="carousel-control-prev" type="button" (click)="onPrev()">
       <span class="carousel-control-prev-icon dark"></span>
@@ -17,4 +12,4 @@
       <span class="visually-hidden">Next</span>
     </a>
   </div>
-</div>
+
