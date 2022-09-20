@@ -37,7 +37,7 @@ export class CarouselComponent implements OnInit {
     if (this.collection==="trending") {
       this.apiMovies.getTrendingMovies().subscribe((data) => {
         this.trendingMovieData = data as ApiResponse;
-        this.slides = this.trendingMovieData.results.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
+        this .slides = this.trendingMovieData.results.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
       })
     } else {
       this.apiMovies.getUpcomingMovies().subscribe((data) => {
