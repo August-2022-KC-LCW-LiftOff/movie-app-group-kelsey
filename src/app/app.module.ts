@@ -31,6 +31,8 @@ import { SignupButtonComponent } from './components/signup-button/signup-button.
 import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
 import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,7 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
     LogoutButtonComponent,
     AuthenticationButtonComponent,
     AuthNavComponent,
+    SearchResultsComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,6 +65,7 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
     AngularFireFunctionsModule,
     AppRoutingModule,
     CommentsModule,
+    FormsModule,
     AuthModule.forRoot({
       ...env.auth,
     }),

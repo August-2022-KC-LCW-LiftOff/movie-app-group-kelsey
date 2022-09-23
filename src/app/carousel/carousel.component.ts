@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiMovieService } from '../api-movie.service';
-import { ApiResponse, Movie } from '../types-global';
+import { ApiResponse } from '../types-global';
 
 @Component({
   selector: 'app-carousel',
@@ -37,7 +37,7 @@ export class CarouselComponent implements OnInit {
     if (this.collection==="trending") {
       this.apiMovies.getTrendingMovies().subscribe((data) => {
         this.trendingMovieData = data as ApiResponse;
-        this .slides = this.trendingMovieData.results.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
+        this.slides = this.trendingMovieData.results.map(movie => `https://image.tmdb.org/t/p/original${movie.poster_path}`);
       })
     } else {
       this.apiMovies.getUpcomingMovies().subscribe((data) => {
