@@ -1,0 +1,12 @@
+<div class="input-group">
+    <span class="input-group-text">Movie name and Year </span>
+    <input type="text" aria-label="Movie name" class="form-control" [ngModel]="search.movie" (ngModelChange)="searchChangeMovie($event)">
+    <input type="text" aria-label="Year" class="form-control" [ngModel]="search.year" (ngModelChange)="searchChangeYear($event)">
+    <button
+    class="btn btn-outline-warning"
+    (click)="onSearch()"
+    type="submit"
+  >
+    Search
+  </button>
+  </div>

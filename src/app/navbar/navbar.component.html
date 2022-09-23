@@ -31,28 +31,14 @@
           <a class="nav-link" [routerLink]="['faq-page']">FAQ</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search for a movie..."
-          aria-label="Search"
-        />
-        <button
-          class="btn btn-outline-warning"
-          (click)="onSearch()"
-          type="submit"
-        >
-          Search
-        </button>
-        <button
+      <app-search-results></app-search-results>
+      <button
           class="btn btn-outline-info"
           (click)="onSignIn()"
           type="sign-in"
         >
           Sign In
         </button>
-      </form>
     </div>
   </div>
 </nav>
