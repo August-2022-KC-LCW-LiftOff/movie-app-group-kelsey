@@ -130,7 +130,17 @@
           }
         }
       }
+<<<<<<< HEAD
+    }},
+  "defaultProject": "MovieProject",
+  "cli": {
+    "analytics": "43723f86-a4b6-483f-b03c-227b3e84ccba"
+=======
     }
   },
-  "defaultProject": "MovieProject"
+  "defaultProject": "MovieProject",
+  "cli": {
+    "analytics": "e65432a4-ce04-4fb8-af3b-4d1015a78148"
+>>>>>>> main
+  }
 }
