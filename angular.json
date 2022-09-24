@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "MovieProject"
+  "defaultProject": "MovieProject",
+  "cli": {
+    "analytics": "e65432a4-ce04-4fb8-af3b-4d1015a78148"
+  }
 }
