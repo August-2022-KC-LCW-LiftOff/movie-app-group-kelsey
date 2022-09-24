@@ -1,0 +1,152 @@
+[
+    {
+        "title": "Abuse and abusive sexual behavior",
+        "id": 1,
+        "categoryDescription": "Abuse occurs when person or animal is treated with cruelty or violence",
+        "subcategories": ["Physical abuse", "Verbal abuse", "Sexual abuse", "Child abuse", 
+        "Domestic abuse", "Gaslighting", "Psychological manipulation", "Financial abuse", 
+        "Elder abuse", "Animal abuse", "Incest", "Rape", "CSA", "Predatory or intimidating behavior", "Beastiality depicted"], 
+        "resourcePhone": ["National Domestic Violence Hotline, call 24/7: 1-800-799-7233 or text START to 88788", "National Child Abuse Hotline: 1-800-222-4523", "National Sexual Assault Hotline, call 24/7: 1-800-656-4673", "Elder Abuse Hotline: 1-800-252-8966"]
+    }, 
+    {
+        "title": "Auditory triggers", 
+        "id": 2, 
+        "categoryDescription": "Auditory triggers can be upsetting for those with misophonia or auditory sensitivity. This category tracks common auditory triggers", 
+        "subcategories": ["Glass breaking", "Tires screeching", "Hitting/slapping is heard", "Screaming/yelling", 
+        "Baby crying", "Animals howling or crying", "Someone is heard gagging", "Medical tools/drills", "Beeping", "Alarms", 
+        "Doorbell ringing", "Someone is heard chewing", "Someone is heard swallowing"]
+    }, 
+    {
+        "title": "Bodily fluids/functions",
+        "id": 3, 
+        "categoryDescription": "Images of bodily fluids or bodily functions can be troubling to viewers", 
+        "subcategories": ["Blood is visible", "Someone bleeds", "Urine is visible", "Someone urinates", 
+        "Feces is visible", "Someone defecates", "Vomit is visible", "Someone vomits", "Saliva is visible", 
+        "Someone spits", "Someone passes gas", "Someone gags"]
+    }, 
+    {
+        "title": "Body mutilation",
+        "id": 4, 
+        "categoryDescription": "Body mutilation is the act of destroying, removing, or severely damaging a limb or other body part of a person or animal", 
+        "subcategories": ["Cannabilism", "A human body is dismembered", "A person is decapitated", "Genital mutilation", 
+        "A person has a limb amputated", "Visible bone or internal organ", "Surgery without anesthesia is performed", "A person is tortured", 
+        "An animal is mutilated or tortured"]
+    }, 
+    {
+        "title": "Childhood myth is spoiled",
+        "id": 5, 
+        "categoryDescription": "Both children and parents could be upset if a film spoils a common myth, such as Santa Claus", 
+        "subcategories": ["Santa is spoiled", "The Tooth Fairy is spoiled", "The Easter Bunny is spoiledd", 
+        "Other mythical creature is spoiled"] 
+    }, 
+    {
+        "title": "Death",
+        "id": 6, 
+        "categoryDescription": "Death is a permanent cessation of all vital body functions, the end of life", 
+        "subcategories": ["A person dies", "An animal dies", "A major character dies", 
+        "An anthropomorphic (non-living) character dies", "Someone is murdered"] 
+    }, 
+    {
+        "title": "Ending is sad",
+        "id": 7, 
+        "categoryDescription": "It may be important for a viewer to know if the ending of the film could be considered sad or disappointing"
+    },
+    {
+        "title": "Frightening animals",
+        "id": 8, 
+        "categoryDescription": "For people with phobias of certain creatures, seeing those creatures in a film could be very unpleasant", 
+        "subcategories": ["Bug[s] visible", "Spider[s] visible", "Snake[s] visible", "Shark[s] visible", 
+        "Excessive number of animals"]
+    }, 
+    {
+        "title": "Hate behaviors/sentiments depicted",
+        "id": 9, 
+        "categoryDescription": "Hate is intense hostility and aversion usually deriving from fear, anger, or sense of injury; hate may be directed toward certain people or groups, and seeing this hate depicted can be frightening", 
+        "subcategories": ["Racism", "Sexism", "Homophobia", "Transphobia", "Xenophobia", 
+        "Antisemitism", "Fatphobia"]
+    }, 
+    {
+        "title": "Hate speech/slurs",
+        "id": 10, 
+        "categoryDescription": "Hate speech is speech expressing hatred of a particular group of people, and a slur is an insulting or disparaging remoark or innuendo; viewers may find hate speech troubling", 
+        "subcategories": ["Racist slur", "Homophobic slur", "Xenophobic slur", "Ableist slur"]
+    },
+    {
+        "title": "Historical event depicted",
+        "id": 11, 
+        "categoryDescription": "Depictions of some historical events are inherently upsetting, while others may be troubling becuase of a viewer's personal connection to an event; reminders of said historical event can be painful", 
+        "subcategories": ["Genocide depicted", "War depicted", "Slave trade depicted", "Famine depicted", 
+        "Mass tragedy depicted"]
+    },
+    {
+        "title": "Jump scare",
+        "id": 12, 
+        "categoryDescription": "A jump scare is a technique used in visual media intended to scare the audience by surprising them with an abrupt change in image or event, usually co-occurring with a loud, jarring sound; jump scares can be very triggering to some viewers"
+    }, 
+    {
+        "title": "Medical scene or medical emergency",
+        "id": 13, 
+        "categoryDescription": "Some viewers find depictions of medical environments, procedures, and emergencies to be particularly disturbing", 
+        "subcategories": ["Hospital scene", "Dentist scene", "Surgery scene", "Someone gives birth", 
+        "Traumatic birth", "Someone chokes", "Someone struggles to breathe", "Someone has a heart attack", 
+        "Someone has a stroke", "Someone has cancer", "Someone has a broken bone", "Someone falls", 
+        "Someone has a seizure", "Car accident", "Someone is injured in a car accident", "Someone is burned"]
+    }, 
+    {
+        "title": "Member of a specific age group is harmed",
+        "id": 14, 
+        "categoryDescription": "For people who have personally experienced the loss of a loved one, seeing harm done to a person of a similar age or relationship can be distressing", 
+        "subcategories": ["An older person is harmed", "A child is harmed", "An infant is harmed", "A parent is harmed", 
+        "A grandparent is harmed", "A son or daughter is harmed", "A pet is harmed"] 
+    }, 
+    {
+        "title": "Physical assault",
+        "id": 15, 
+        "categoryDescription": "Assault is the act of inflicting physical harm or unwanted physical contact upon a person; people can harm each other in violent and disturbing ways", 
+        "subcategories": ["Someone is hit or slapped", "Someone is kicked", "Someone is punched", "Someone is grabbed violently", "Someone is stabbed", 
+        "Someone is shot", "Someone is chased in a threatening manner", "A weapon is used against someone"], 
+        "resourcePhone": ["National Domestic Violence Hotline, call 24/7: 1-800-799-7233 or text START to 88788"]
+    }, 
+    {
+        "title": "Psychological or physical experiences",
+        "id": 16, 
+        "categoryDescription": "Depictions of certain psychological or physical experiences can be upsetting to viewers who also live with those experiences, or troubling to viewers who are highly empathetic", 
+        "subcategories": ["Anxiety is depicted", "Depression is depicted", "Grief is depicted", 
+        "Someone experiences physical pain", "Someone experiences psychological or emotional pain", 
+        "Someone experiences a personal tragedy", "Delusions are depicted", "Obsessions are depicted", 
+        "Hallucinations are depicted", "Someone experiences nausea", "Someone experiences hunger", "Body dysmorphia is depicted", 
+        "Binging and/or purging behavior is depicted", "Anorexia is depicted"], 
+        "resourcePhone": ["SAMHSA (Substance Abuse and Mental Health Services Administration) National Helpline, call 24/7: 1-800-662-4357","National Eating Disorders Helpline, call or text 1-800-931-2237"]
+    },
+    {
+        "title": "Religion and religious trauma",
+        "id": 17, 
+        "categoryDescription": "For viewers with troubling experiences related to religious institutions, scenes featuring religion can be particularly troubling", 
+        "subcategories": ["Religion is depicted", "Religious hate is depicted", "Clergy-involved sexual abuse", "Religious extremism depicted", 
+        "Posession is depicted"]
+    }, 
+    {
+        "title": "Self-harm",
+        "id": 18, 
+        "categoryDescription": "Self-harm is when an individual hurts themselves as a way of dealing with difficult feelings, painful memories, or overwhelming siutations and expereinces; for individuals who have experienced or have been affected by self-harm, scenes depicting self-harm can be distressing", 
+        "subcategories": ["Someone dies by suicide", "Someone attempts suicide", "Someone talks about suicide", "Someone cuts themself", 
+        "Someone burns themself", "Someone talks about self-harm"], 
+        "resourcePhone": ["Suicide and Crisis Lifeline, call or text 24/7: 988", "Self-Injury Crisis Text Line, text 24/7: text HOME to 741741"]
+    }, 
+    {
+        "title": "Sexual content or nudity",
+        "id": 19, 
+        "categoryDescription": "Sexual content is material depicting sexual behavior, while nudity is the state of being naked; some viewers may find this type of content to be alarming", 
+        "subcategories": ["Sexual intercourse is depicted", "Oral sex is depicted", "Anal sex is depicted", "Breasts visible", "Genitals visible", "Someone masturbates", "Someone talks about sexual acts"], 
+        "resourcePhone": ["National Sexual Assault Hotline, call 24/7: 1-800-656-4673"]
+    }, 
+    {
+        "title": "Substance Use",
+        "id": 20, 
+        "categoryDescription": "For viewers who have been affected by substance use or substance use disorder, scenes involving drugs, alcohol, or other addictive substances can be triggering", 
+        "subcategories": ["Alcohol is visible", "Alcohol is used", "Alcohol use is mentioned", "Someone drinks alcoholically", 
+        "Drugs are visible", "Drugs are used", "Drugs are mentioned", "Someone is addicted to drugs", "Nicotine products are visible", 
+        "Nicotine products are used", "Nicotine products are mentioned"], 
+        "resourcePhone": ["SAMHSA (Substance Abuse and Mental Health Services Administration) National Helpline, call 24/7: 1-800-662-4357"]
+    }       
+]

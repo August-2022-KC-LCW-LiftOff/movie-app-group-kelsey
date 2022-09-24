@@ -1,3 +1,13 @@
+
+export type Trigger = {
+    title: string,
+    id: number;
+    categoryDescription: string, 
+    subcategories?: string[];
+    resourcePhone?: string[];
+}
+
+
 export type Movie = { 
     adult: boolean,
     backdrop_path: string,
