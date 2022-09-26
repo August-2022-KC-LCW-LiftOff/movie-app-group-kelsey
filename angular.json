@@ -131,10 +131,9 @@
           }
         }
       }
-    }
-  },
+    }},
   "defaultProject": "MovieProject",
   "cli": {
-    "analytics": "7957db26-4428-4bda-a64c-7b8028531a0d"
+    "analytics": "43723f86-a4b6-483f-b03c-227b3e84ccba"
+    }
   }
-}

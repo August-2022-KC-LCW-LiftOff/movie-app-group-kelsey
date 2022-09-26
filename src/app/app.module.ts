@@ -32,6 +32,7 @@ import { LogoutButtonComponent } from './components/logout-button/logout-button.
 import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
 import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -52,6 +53,7 @@ import { FormsModule } from '@angular/forms';
     AuthenticationButtonComponent,
     AuthNavComponent,
     AddTriggerFormComponent,
+    SearchResultsComponent,
   ],
   imports: [
     BrowserModule,
