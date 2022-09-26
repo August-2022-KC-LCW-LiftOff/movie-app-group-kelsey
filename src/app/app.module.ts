@@ -31,6 +31,7 @@ import { SignupButtonComponent } from './components/signup-button/signup-button.
 import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
 import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
+import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { FormsModule } from '@angular/forms';
 
@@ -51,6 +52,7 @@ import { FormsModule } from '@angular/forms';
     LogoutButtonComponent,
     AuthenticationButtonComponent,
     AuthNavComponent,
+    AddTriggerFormComponent,
     SearchResultsComponent,
   ],
   imports: [
