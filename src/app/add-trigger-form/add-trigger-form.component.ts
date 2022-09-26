@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Trigger } from '../types-global';
+import triggersJson from './../../assets/triggers.json';
 
 export class User {
   public name!: string;
@@ -12,34 +14,18 @@ export class User {
   styleUrls: ['./add-trigger-form.component.css']
 })
 export class AddTriggerFormComponent implements OnInit {
-  triggerTags: string[] = [
-    'Abuse and abusive sexual behavior',
-    'Auditory triggers',
-    'Bodily fluids/functions',
-    'Body mutilation',
-    'Childhood myth is spoiled',
-    'Death',
-    'Ending is sad',
-    'Frightening animals',
-    'Hate behaviors/sentiments depicted',
-    'Hate speech/slurs',
-    'Historical event depicted',
-    'Jump scare',
-    'Medical scene or medical emergency',
-    'Member of a specific age group is harmed',
-    'Physical assault',
-    'Psychological or physical experiences',
-    'Religion and religious trauma',
-    'Self-harm',
-    'Sexual content or nudity',
-    'Substance use',
-  ];
+  triggerTags: string[] = triggersJson.map(trigger => trigger.title);
+  selectedTrigger: string = "";
+  triggerSubcategories: string[] = [];
 
   constructor() {}
   onSubmit(form: any) {
     console.log(form.value);
   }
-
+  onSelectedTriggerChange(trigg: string){
+    this.selectedTrigger = trigg;
+    this.triggerSubcategories = triggersJson.find(trigger => trigger.title === trigg).subcategories;
+  }
   ngOnInit(): void {
   }
 
