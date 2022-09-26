@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -130,7 +131,9 @@
           }
         }
       }
+    }},
+  "defaultProject": "MovieProject",
+  "cli": {
+    "analytics": "43723f86-a4b6-483f-b03c-227b3e84ccba"
     }
-  },
-  "defaultProject": "MovieProject"
-}
+  }

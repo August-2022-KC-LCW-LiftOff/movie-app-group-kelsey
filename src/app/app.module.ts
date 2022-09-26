@@ -30,6 +30,7 @@ import { LoginButtonComponent } from './components/login-button/login-button.com
 import { LogoutButtonComponent } from './logout-button/logout-button.component';
 import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
+import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './pages/profile/profile/profile.component';
@@ -50,6 +51,7 @@ import { ProfileComponent } from './pages/profile/profile/profile.component';
     LogoutButtonComponent,
     AuthenticationButtonComponent,
     AuthNavComponent,
+    AddTriggerFormComponent,
     SearchResultsComponent,
     ProfileComponent,
   ],

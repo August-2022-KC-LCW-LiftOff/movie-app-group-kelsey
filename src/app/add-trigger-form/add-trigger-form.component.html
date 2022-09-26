@@ -1,0 +1,34 @@
+<form novalidate>
+    <div class="form-group merriweather col-12">
+      <label>Review Headline</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group merriweather">
+      <label>Movie Title</label>
+      <input type="email" class="form-control">
+    </div>
+    <div class="form-group merriweather">
+      <label>Add Trigger Warning</label>
+      <input type="password" class="form-control">
+    </div>
+    <div class="form-group merriweather">
+      <!-- <label>Add Trigger Tags</label> -->
+      <select class="form-control" [(ngModel)]="selectedTrigger" (ngModelChange)="onSelectedTriggerChange($event)">
+        <option value="">Click to Select Trigger Category</option>
+        <option *ngFor="let triggerTag of triggerTags" [value]="triggerTag">
+          {{triggerTag}}
+        </option>
+      </select>
+    </div>
+    <div class="form-group merriweather">
+        <select class="form-control">
+          <option value="">Click to Select Trigger Subcategory</option>
+          <option *ngFor="let subcategory of triggerSubcategories" [value]="triggerSubcategories">
+            {{subcategory}}
+          </option>
+        </select>
+      </div>
+    <div class="form-group merriweather">
+      <button class="btn btn-danger btn-block">Add Trigger Review</button>
+    </div>
+  </form>
