@@ -19,7 +19,7 @@
                             <span class="input-icon"><i class="fa fa-lock"></i></span> 
                             <input type="password" class="form-control" placeholder="Confirm Password"> 
                         </div> 
-                        <button class="btn signin merriweather">Create Account</button>
+                        <button class="btn signin merriweather"(click)="loginWithRedirect()">Create Account</button>
                         <div class="form-group merriweather"> 
                             <span class="input-icon"><i class="fa fa-lock"></i></span> 
                             <span class="new user merriweather nav-link"><a [routerLink]="['/sign-in-page']">Already have an account? Sign-in here</a></span>

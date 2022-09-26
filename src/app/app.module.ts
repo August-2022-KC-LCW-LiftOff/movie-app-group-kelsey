@@ -27,13 +27,13 @@ import { AngularFireFunctionsModule } from '@angular/fire/compat/functions';
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
-import { SignupButtonComponent } from './components/signup-button/signup-button.component';
-import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
+import { LogoutButtonComponent } from './logout-button/logout-button.component';
 import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
 import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { FormsModule } from '@angular/forms';
+import { ProfileComponent } from './pages/profile/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -48,12 +48,12 @@ import { FormsModule } from '@angular/forms';
     SignInPageComponent,
     CreateAnAccountComponent,
     LoginButtonComponent,
-    SignupButtonComponent,
     LogoutButtonComponent,
     AuthenticationButtonComponent,
     AuthNavComponent,
     AddTriggerFormComponent,
     SearchResultsComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
