@@ -34,6 +34,7 @@ import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.com
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './pages/profile/profile/profile.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { ProfileComponent } from './pages/profile/profile/profile.component';
     AddTriggerFormComponent,
     SearchResultsComponent,
     ProfileComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
