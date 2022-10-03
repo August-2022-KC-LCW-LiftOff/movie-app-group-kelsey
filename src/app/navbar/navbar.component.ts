@@ -14,6 +14,8 @@ export class NavbarComponent implements OnInit {
 
   onSignIn() {this.router.navigate(['sign-in-page'])}
 
+  onCreateAccount() {this.router.navigate(['create-an-account'])}
+
   ngOnInit() {
   }
 

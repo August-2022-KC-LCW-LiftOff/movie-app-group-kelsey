@@ -35,6 +35,8 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './pages/profile/profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
+import { SignInButtonComponent } from './sign-in-button/sign-in-button.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +58,8 @@ import { FooterComponent } from './footer/footer.component';
     SearchResultsComponent,
     ProfileComponent,
     FooterComponent,
+    ShowcaseComponent,
+    SignInButtonComponent,
   ],
   imports: [
     BrowserModule,

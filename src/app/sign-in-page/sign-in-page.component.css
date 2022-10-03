@@ -22,6 +22,7 @@ body{
         background: linear-gradient(150deg, #3A2E39 33%, #FCBF49 34%, #006D77 66%, #83C5BE 67%);
         text-align: center;
         padding: 30px 30px 50px;
+        height: 77.5vh
 
 }
     
@@ -121,6 +122,23 @@ body{
 }
 
 .form-horizontal .signin:hover, .form-horizontal .signin:focus{
+    font-weight: 600;
+    letter-spacing: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset
+}
+
+.form-horizontal .create{
+    color: #fff;
+    background-color: #FCBF49;
+    font-size: 17px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease 0s
+}
+.form-horizontal .create:hover, .form-horizontal .create:focus{
     font-weight: 600;
     letter-spacing: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset
