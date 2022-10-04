@@ -37,6 +37,7 @@ import { ProfileComponent } from './pages/profile/profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { SignInButtonComponent } from './sign-in-button/sign-in-button.component';
+import { FaqSectionComponent } from './faq-section/faq-section.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { SignInButtonComponent } from './sign-in-button/sign-in-button.component
     FooterComponent,
     ShowcaseComponent,
     SignInButtonComponent,
+    FaqSectionComponent,
   ],
   imports: [
     BrowserModule,

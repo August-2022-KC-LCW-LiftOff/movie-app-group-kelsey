@@ -1,4 +1,7 @@
 .navbar-custom {
     background-color: #006D77;
-    //background-color: #fcbf49;
  }
+
+ .merriweather {
+    font-family: "Merriweather", serif;
+}
