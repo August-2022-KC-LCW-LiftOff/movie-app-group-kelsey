@@ -8,6 +8,10 @@
  }
 
  .bg-custom {
-    background-color: #fcbf49;
+    /* background-color: #fcbf49; */
+    background-color: #83c5be;
  }
 
+.btn-custom {
+    background-color: #fcbf49;
+}
