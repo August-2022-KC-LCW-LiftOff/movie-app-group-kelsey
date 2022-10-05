@@ -1,19 +1,27 @@
 <app-showcase></app-showcase>
 
-<section class="grad h-100 p-5">
-    <div class="container-fluid flex justify-content-center w-100">
+<section class="grad p-5 merriweather">
+    <div class="container-fluid flex">
         <div class="row justify-content-between">
-            <div class="col-6">
-                <h3 style="color: #FCBF49; font-size:16px">Recent Movies</h3>
-                <app-carousel [collection]="'recent'"></app-carousel>
+            <div class="container col-md-12 col-lg-6">
+ 
+                <h3 class="text-custom text-center py-2">Recent Movies</h3>
+                <div class="col-md-6 mx-auto">
+                    <app-carousel [collection]="'recent'"></app-carousel>
+                </div>
             </div>
-            <div class="col-6">
-                <h3 style="color: #FCBF49; font-size:16px">Trending Movies</h3>
-                <app-carousel [collection]="'trending'"></app-carousel>
+
+            <div class="container col-md-12 col-lg-6">
+                <h3 class="text-custom text-center py-2">Trending Movies</h3>
+                <div class="col-md-6 mx-auto">
+                    <app-carousel [collection]="'trending'"></app-carousel>
+                </div>        
             </div>
+            
         </div>
     </div>
 </section>
+
 
 <app-triggers-display></app-triggers-display>
 <app-faq-section></app-faq-section>

@@ -1,5 +1,5 @@
-<div class="w-50">
-<div class="carousel slide flex w-75" data-bs-ride="carousel" data-interval="5000">
+<div>
+<div class="carousel slide flex" data-bs-ride="carousel" data-interval="10000">
     <div class="carousel-inner">
       <div *ngFor="let slide of slides; let i = index" [class]="i === activeIndex ? 'carousel-item active' : 'carousel-item'"><img class="d-block w-100" [src]="slide" alt="...">
       </div>

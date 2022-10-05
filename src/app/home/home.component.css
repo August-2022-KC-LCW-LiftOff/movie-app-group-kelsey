@@ -1,13 +1,13 @@
-.column {
+/* .column {
     flex: 1;
     position: absolute;
-}
+} */
 
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-}
+} */
 
 .grad {
     min-height: 100%;
@@ -22,6 +22,14 @@
      rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(356deg, rgb(251,207,73),rgb(131,197,190));
 }
 
-body {
+/* body {
     height: 77.5vh;
+} */
+
+.merriweather {
+    font-family: "Merriweather", serif;
 }
+
+.text-custom {
+    color: #fcbf49;
+ }
