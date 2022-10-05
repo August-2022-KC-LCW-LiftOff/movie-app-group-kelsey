@@ -1,16 +1,29 @@
 <div>
-<div class="carousel slide flex" data-bs-ride="carousel" data-interval="10000">
+  <div
+    class="carousel slide flex"
+    data-bs-ride="carousel"
+    data-interval="10000"
+  >
     <div class="carousel-inner">
-      <div *ngFor="let slide of slides; let i = index" [class]="i === activeIndex ? 'carousel-item active' : 'carousel-item'"><img class="d-block w-100" [src]="slide" alt="...">
+      <div
+        *ngFor="let slide of slides; let i = index"
+        [class]="i === activeIndex ? 'carousel-item active' : 'carousel-item'"
+      >
+        <img class="d-block w-100" [src]="slide" alt="..." />
       </div>
     </div>
     <button class="carousel-control-prev" type="button" (click)="onPrev()">
       <span class="carousel-control-prev-icon dark"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <a class="carousel-control-next" role="button" (click)="onNext()" data-slide="next">
+    <a
+      class="carousel-control-next"
+      role="button"
+      (click)="onNext()"
+      data-slide="next"
+    >
       <span class="carousel-control-next-icon text-dark"></span>
       <span class="visually-hidden">Next</span>
     </a>
   </div>
-
+</div>
