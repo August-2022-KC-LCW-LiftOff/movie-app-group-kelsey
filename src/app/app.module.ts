@@ -38,6 +38,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { SignInButtonComponent } from './sign-in-button/sign-in-button.component';
 import { FaqSectionComponent } from './faq-section/faq-section.component';
+import { DriveInImageComponent } from './drive-in-image/drive-in-image.component';
+import { TriggersDisplayComponent } from './triggers-display/triggers-display.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +64,8 @@ import { FaqSectionComponent } from './faq-section/faq-section.component';
     ShowcaseComponent,
     SignInButtonComponent,
     FaqSectionComponent,
+    DriveInImageComponent,
+    TriggersDisplayComponent,
   ],
   imports: [
     BrowserModule,

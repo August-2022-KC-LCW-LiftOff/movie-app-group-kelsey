@@ -10,7 +10,7 @@ import { ApiMovieService } from '../api-movie.service';
 export class NavbarComponent implements OnInit {
   
 
-  constructor(private router:Router, private httpClient: HttpClient, private apiMovies: ApiMovieService) { }
+  constructor(private router: Router, private httpClient: HttpClient, private apiMovies: ApiMovieService) { }
 
   onSignIn() {this.router.navigate(['sign-in-page'])}
 
