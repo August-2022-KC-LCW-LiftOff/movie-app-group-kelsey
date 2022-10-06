@@ -32,7 +32,7 @@ import { AuthenticationButtonComponent } from './components/authentication-butto
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
 import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './pages/profile/profile/profile.component';
 
 @NgModule({
@@ -68,6 +68,7 @@ import { ProfileComponent } from './pages/profile/profile/profile.component';
     AppRoutingModule,
     CommentsModule,
     FormsModule,
+    ReactiveFormsModule,
     AuthModule.forRoot({
       ...env.auth,
     }),
