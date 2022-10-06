@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
-import { WarningService } from '../shared/crud.service'
 import { TriggerWarning } from '../shared/trigger-warning';
-import { map } from 'rxjs/operators';
+import { WarningService } from 'src/app/services/warning-service';
 
 
 @Component({
@@ -22,20 +21,12 @@ export class MovieListComponent implements OnInit {
   ngOnInit() {
     const history: any = this.location.getState();
     this.movieResults = history?.movieSearchResults;
-    console.log("Yippee");
-    //this.warningService.getAll().subscribe(response => console.log(response.payload));
-  }
+    // you could also do this by ID, if you wanted a more specific movie search (aka not just the first result)
+    this.getMovieWarnings(this.movieResults[0].title);
+}
 
-  // retrieveWarnings(): void {
-  //   this.warningService.getAll().snapshotChanges().pipe(
-  //     map(changes =>
-  //       changes.map(c =>
-  //         ({ id: c.payload.doc.id, ...c.payload.doc.data() })
-  //       )
-  //     )
-  //   ).subscribe(data => {
-  //     this.triggerWarnings = data;
-  //   });
-  //   console.log(this.triggerWarnings);
-  // }
+  async getMovieWarnings(title) {
+    this.triggerWarnings = await this.warningService.getWarnings(title);
+    console.log(this.triggerWarnings);
+  }  
 }

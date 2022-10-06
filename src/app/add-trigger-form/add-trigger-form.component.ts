@@ -70,9 +70,9 @@ export class AddTriggerFormComponent implements OnInit {
   }
 
   submitTriggerWarningData() {  
-    console.log(this.triggerWarning);
+    // console.log(this.triggerWarning);
     //this.crudApi.AddTriggerWarning(this.triggerWarning.value);
-    console.log("Hello");
+    // console.log("Hello");
     this.ResetForm();
     
   }
