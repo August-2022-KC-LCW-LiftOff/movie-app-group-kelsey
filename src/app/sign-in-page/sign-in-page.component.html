@@ -1,53 +1,59 @@
-<div class="form-bg">
-  <div class="container">
-    <div class="row flex justify-content-center p-5">
-      <div class="col-md-6">
-        <div class="form-container">
-          <h3 class="title merriweather">Sign Into your account</h3>
-          <div class="form-horizontal">
-            <div class="form-icon">
-              <img
-                class="triggered icon"
-                src="../assets/fox-triggered.gif"
-                alt="triggered fox"
-                width="90"
-                height="90"
-              />
-            </div>
-            <div class="form-group merriweather">
-              <span class="input-icon"><i class="fa fa-user"></i></span>
-              <input type="email" class="form-control" placeholder="Username" />
-            </div>
-            <div class="form-group merriweather">
-              <span class="input-icon"><i class="fa fa-lock"></i></span>
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Password"
-              />
-              <span class="forgot"><a href="">Forgot your password?</a></span>
-            </div>
-            <button
-              class="btn signin merriweather"
-              (click)="loginWithRedirect()"
-            >
-              Sign In
-            </button>
-            <h5 class="merriweather text-center py-2">Or</h5>
-            <div class="form-group merriweather">
-              <span class="input-icon"><i class="fa fa-lock"></i></span>
-              <span class="new user merriweather nav-link">
-                <button
-                  class="btn btn-custom create merriweather"
-                  [routerLink]="['/create-an-account']"
-                >
-                  Create an account
-                </button></span
+<section>
+  <div class="form-bg">
+    <div class="container">
+      <div class="row flex justify-content-center p-5">
+        <div class="col-md-6">
+          <div class="form-container">
+            <h3 class="title merriweather">Sign Into your account</h3>
+            <div class="form-horizontal">
+              <div class="form-icon">
+                <img
+                  class="triggered icon"
+                  src="../assets/fox-triggered.gif"
+                  alt="triggered fox"
+                  width="90"
+                  height="90"
+                />
+              </div>
+              <div class="form-group merriweather">
+                <span class="input-icon"><i class="fa fa-user"></i></span>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="form-group merriweather">
+                <span class="input-icon"><i class="fa fa-lock"></i></span>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <span class="forgot"><a href="">Forgot your password?</a></span>
+              </div>
+              <button
+                class="btn signin merriweather"
+                (click)="loginWithRedirect()"
               >
+                Sign In
+              </button>
+              <h5 class="merriweather text-center py-2">Or</h5>
+              <div class="form-group merriweather">
+                <span class="input-icon"><i class="fa fa-lock"></i></span>
+                <span class="new user merriweather nav-link">
+                  <button
+                    class="btn btn-custom create merriweather"
+                    [routerLink]="['/create-an-account']"
+                  >
+                    Create an account
+                  </button></span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
