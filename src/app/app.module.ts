@@ -34,7 +34,6 @@ import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.com
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './pages/profile/profile/profile.component';
-import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +54,6 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     AddTriggerFormComponent,
     SearchResultsComponent,
     ProfileComponent,
-    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,
