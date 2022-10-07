@@ -58,3 +58,11 @@ p {
     content: '';
     height: 80px;
   }
+
+.merriweather {
+    font-family: "Merriweather", serif;
+}
+
+.text-custom {
+    color: #3a2e39;
+ }
