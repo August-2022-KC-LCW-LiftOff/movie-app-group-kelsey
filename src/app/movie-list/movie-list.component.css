@@ -53,3 +53,8 @@ p {
     width: 50%;
   }
 
+  section::before {
+    display: block;
+    content: '';
+    height: 80px;
+  }

@@ -1,19 +1,29 @@
-<h1>{{movieResults[0].title}}</h1>
-<body class="grad h-100"></body>
-<p class="container text-justify merriweather"> {{movieResults[0].release_date}}</p>
-<img class="poster"
-    src="https://image.tmdb.org/t/p/w500{{movieResults[0].poster_path}}" class="center">
-<p>{{movieResults[0].overview}}</p>
+<section>
+  <h1>{{ movieResults[0].title }}</h1>
+  <body class="grad h-100"></body>
+  <p class="container text-justify merriweather">
+    {{ movieResults[0].release_date }}
+  </p>
+  <img
+    class="poster"
+    src="https://image.tmdb.org/t/p/w500{{ movieResults[0].poster_path }}"
+    class="center"
+  />
+  <p>{{ movieResults[0].overview }}</p>
 
-<div class="card" style="width: 18rem;">
-    <div class="card-header">
-      Trigger Warnings
-    </div>
+  <div class="card" style="width: 18rem">
+    <div class="card-header">Trigger Warnings</div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">An item</li>
       <li class="list-group-item">A second item</li>
       <li class="list-group-item">A third item</li>
     </ul>
   </div>
-<app-add-trigger-form></app-add-trigger-form>
-<comments></comments>
+  <app-add-trigger-form></app-add-trigger-form>
+  <comments></comments>
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" [routerLink]="['']">
+      Back Home
+    </button>
+  </div>
+</section>

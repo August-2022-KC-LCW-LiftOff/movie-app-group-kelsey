@@ -1,6 +1,6 @@
-.container-sm {
+/* .container-sm {
     max-width: 540px,
-}
+} */
 
 .merriweather {
     font-family: "Merriweather", serif;
@@ -15,6 +15,14 @@
     color: #FCBF49;
 }
 
+.deep-blue-green {
+    color: #006d77;
+}
+
+.red {
+    color: #d62828;
+}
+
 h1 {
     text-align: center;
 }
@@ -24,5 +32,15 @@ h2 {
 }
 
 p {
-    text-align: justify;
+    text-align: start;
 }
+
+.btn-custom {
+    background-color: #83c5be;
+}
+
+section::before {
+    display: block;
+    content: '';
+    height: 80px;
+  }

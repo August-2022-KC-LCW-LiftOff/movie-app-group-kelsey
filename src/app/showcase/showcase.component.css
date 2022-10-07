@@ -17,6 +17,6 @@
  section::before {
    display: block;
    content: '';
-   height: 60px;
+   height: 50px;
  }
  
