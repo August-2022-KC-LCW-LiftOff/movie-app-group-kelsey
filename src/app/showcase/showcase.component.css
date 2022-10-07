@@ -13,3 +13,10 @@
  .size {
     width: 70vw;
  }
+
+ section::before {
+   display: block;
+   content: '';
+   height: 60px;
+ }
+ 
