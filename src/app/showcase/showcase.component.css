@@ -17,7 +17,7 @@
  section::before {
    display: block;
    content: '';
-   height: 50px;
+   height: 30px;
  }
  
  
