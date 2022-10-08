@@ -1,23 +1,24 @@
-<html>
-<body class="grad h-100">
-    <h2 style="color: #3A2E39">Welcome to 
-        <span style="color: #D62828">Triggered</span>
-        <span style="color: #3A2E39">, where we all work together to create a safer way to watch movies</span>
+<app-showcase></app-showcase>
 
-        </h2>
-<div class="container-fluid flex justify-content-center w-100">
+<section class="grad p-5 merriweather">
+  <div class="container">
     <div class="row justify-content-between">
-        <div class="col-6">
-            <h3 style="color: #FCBF49; font-size:16px">Recent Movies</h3>
-            <app-carousel [collection]="'recent'"></app-carousel>
+      <div class="col-md-12 col-lg-6">
+        <h3 class="text-custom text-center py-2">Recent Movies</h3>
+        <div class="col-xs-5 col-md-7 mx-auto">
+          <app-carousel [collection]="'recent'"></app-carousel>
         </div>
-        <div class="col-6">
-            <h3 style="color: #FCBF49; font-size:16px">Trending Movies</h3>
-            <app-carousel [collection]="'trending'"></app-carousel>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <h3 class="text-custom text-center py-2">Trending Movies</h3>
+        <div class="col-xs-5 col-md-7 mx-auto">
+          <app-carousel [collection]="'trending'"></app-carousel>
         </div>
+      </div>
     </div>
-</div>
-</body>
-</html>
+  </div>
+</section>
 
-
+<app-triggers-display></app-triggers-display>
+<app-faq-section></app-faq-section>
+<app-drive-in-image></app-drive-in-image>

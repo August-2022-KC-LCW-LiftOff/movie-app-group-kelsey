@@ -34,6 +34,13 @@ import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.com
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './pages/profile/profile/profile.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { FooterComponent } from './footer/footer.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
+import { SignInButtonComponent } from './sign-in-button/sign-in-button.component';
+import { FaqSectionComponent } from './faq-section/faq-section.component';
+import { DriveInImageComponent } from './drive-in-image/drive-in-image.component';
+import { TriggersDisplayComponent } from './triggers-display/triggers-display.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +61,13 @@ import { ProfileComponent } from './pages/profile/profile/profile.component';
     AddTriggerFormComponent,
     SearchResultsComponent,
     ProfileComponent,
+    ScrollToTopComponent,
+    FooterComponent,
+    ShowcaseComponent,
+    SignInButtonComponent,
+    FaqSectionComponent,
+    DriveInImageComponent,
+    TriggersDisplayComponent,
   ],
   imports: [
     BrowserModule,
