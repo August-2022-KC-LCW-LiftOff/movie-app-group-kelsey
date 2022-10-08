@@ -1,23 +1,23 @@
 .merriweather {
-    font-family: "Merriweather", serif;
+   font-family: "Merriweather", serif;
 }
 
 .text-custom {
-    color: #3a2e39;
- }
+   color: #3a2e39;
+}
 
- .bg-custom {
-    background-color: #FFFBF2;
- }
+.bg-custom {
+   background-color: #FFFBF2;
+}
 
- .size {
-    width: 70vw;
- }
+.size {
+   width: 70vw;
+}
 
- section::before {
+section::before {
    display: block;
    content: '';
    height: 30px;
- }
+}
  
  

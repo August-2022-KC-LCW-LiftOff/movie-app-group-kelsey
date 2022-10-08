@@ -1,6 +1,5 @@
 .merriweather {
     font-family: "Merriweather", serif;
-
 }
 
 body{
@@ -16,7 +15,6 @@ body{
         text-align: center;
         padding: 30px 30px 50px;
         height: 78.5vh;
-
 }
     
 .form-container .title{
@@ -31,8 +29,7 @@ body{
         background-color: #fff;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-        
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);       
 }
     
 .form-horizontal .form-icon{
@@ -83,7 +80,6 @@ body{
     color: #000;
     font-size: 16px;
     font-weight: 600
-
 }
 
 .form-horizontal .forgot{
@@ -132,6 +128,7 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease 0s
 }
+
 .form-horizontal .create:hover, .form-horizontal .create:focus{
     font-weight: 600;
     letter-spacing: 5px;

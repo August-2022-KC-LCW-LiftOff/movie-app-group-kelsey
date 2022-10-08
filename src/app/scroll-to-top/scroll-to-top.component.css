@@ -5,13 +5,13 @@
     position: fixed;
     right: 0;
     opacity: 0;
-  }
+}
   
-  .show-scrollTop {
+.show-scrollTop {
     opacity: 1 !important;
     transition: all 0.2s ease-in-out;
-  }
+}
 
-  .custom-color {
+.custom-color {
     color: #3a2e39;
-  }
+}

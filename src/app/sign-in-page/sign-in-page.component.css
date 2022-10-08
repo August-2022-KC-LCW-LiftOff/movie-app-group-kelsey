@@ -1,6 +1,5 @@
 .merriweather {
     font-family: "Merriweather", serif;
-
 }
 
 body{
@@ -16,7 +15,6 @@ body{
         text-align: center;
         padding: 30px 30px 50px;
         height: 78.5vh
-
 }
     
 .form-container .title{
@@ -131,6 +129,7 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease 0s
 }
+
 .form-horizontal .create:hover, .form-horizontal .create:focus{
     font-weight: 600;
     letter-spacing: 5px;
@@ -142,3 +141,4 @@ section::before {
     content: '';
     height: 80px;
   }
+  
