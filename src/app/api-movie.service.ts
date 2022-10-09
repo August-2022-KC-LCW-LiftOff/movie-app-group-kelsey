@@ -18,8 +18,11 @@ export class ApiMovieService {
     return this.http.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=${env.tmdb_api_key}&language=en-US&page=1&region=US`)
   }
 
-  search(movie, year){
+  search(movie, year?){
     const noSpaces = movie.replaceAll(' ', '+');
+    if(!year){
+      return this.http.get(`https://api.themoviedb.org/3/search/movie?api_key=${env.tmdb_api_key}&language=en-US&query=${noSpaces}&page=1&include_adult=false`)
+    }
     return this.http.get(`https://api.themoviedb.org/3/search/movie?api_key=${env.tmdb_api_key}&language=en-US&query=${noSpaces}&page=1&include_adult=false&primary_release_year=${year}`)
   }
 
