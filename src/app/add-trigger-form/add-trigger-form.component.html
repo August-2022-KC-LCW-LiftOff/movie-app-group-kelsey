@@ -1,7 +1,7 @@
-<form novalidate (ngSubmit)="submitTriggerWarningData()">
+<form novalidate [formGroup]="triggerWarningForm" (ngSubmit)="submitTriggerWarningData()">
     <div class="form-group merriweather col-12">
       <label>Review Headline</label>
-      <input type="text" class="form-control" formControlName="headline" name="headline">
+      <input type="text" formControlName="headline">
     </div>
     <div class="form-group merriweather">
       <label>Movie Title</label>

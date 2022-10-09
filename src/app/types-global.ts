@@ -31,3 +31,13 @@ export type ApiResponse = {
     total_results: number,
     total_pages: number
 }
+
+export type TriggerWarning = {
+    headline: string;
+    movieTitle: string;
+    movieId: string;
+    warning: string; 
+    category: string;
+    subcategory?: string;
+    userId?: string;
+}

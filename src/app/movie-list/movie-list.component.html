@@ -1,19 +1,36 @@
-<h1>{{movieResults[0].title}}</h1>
+<h1>{{ movieResults[0].title }}</h1>
 <body class="grad h-100"></body>
-<p class="container text-justify merriweather"> {{movieResults[0].release_date}}</p>
-<img class="poster"
-    src="https://image.tmdb.org/t/p/w500{{movieResults[0].poster_path}}" class="center">
-<p>{{movieResults[0].overview}}</p>
-
-<div class="card" style="width: 18rem;">
-    <div class="card-header">
-      Trigger Warnings
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-    </ul>
+<p class="container text-justify merriweather">
+  {{ movieResults[0].release_date }}
+</p>
+<img
+  class="poster"
+  src="https://image.tmdb.org/t/p/w500{{ movieResults[0].poster_path }}"
+  class="center"
+/>
+<p>{{ movieResults[0].overview }}</p>
+<div *ngIf="triggerWarnings.length > 0" class="card" style="width: 18rem">
+  <div class="card-header" style="color: #D62828">Trigger Warning</div>
+  <div *ngFor="let trigger of triggerWarnings">
+    <p>Headline: {{trigger.headline}}</p>
+    <p>Warning: {{trigger.warning}}</p>
+    <p>Trigger Category: {{trigger.category}}</p>
+    <p *ngIf="trigger.subcategory">Subcategory: {{trigger.subcategory}}</p>
   </div>
+</div>
+
+  <div *ngIf="triggerWarnings.length > 1" class="card" style="width: 18rem">
+    <div class="card-header" style="color: #D62828">Trigger Warning</div>
+    <div *ngFor="let trigger of triggerWarnings">
+      <p>Headline: {{trigger.headline}}</p>
+      <p>Warning: {{trigger.warning}}</p>
+      <p>Trigger Category: {{trigger.category}}</p>
+      <p *ngIf="trigger.subcategory">Subcategory: {{trigger.subcategory}}</p>
+    </div>
+</div>
+
+<div>
+  <p> </p>
+</div>
 <app-add-trigger-form></app-add-trigger-form>
 <comments></comments>

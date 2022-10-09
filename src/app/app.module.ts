@@ -58,7 +58,7 @@ import { ProfileComponent } from './pages/profile/profile/profile.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(env.firebase),
+    AngularFireModule.initializeApp(env.firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
