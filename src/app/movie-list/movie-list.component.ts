@@ -10,7 +10,6 @@ import { Location } from '@angular/common';
 export class MovieListComponent implements OnInit {
 
   movieResults = [];
-  //moviePoster = ;
 
   constructor(private location: Location) { }
 
