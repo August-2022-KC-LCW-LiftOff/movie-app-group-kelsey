@@ -34,7 +34,7 @@ section::before {
     color: #3a2e39;
  }
 
- .text-custom2 {
+.text-custom2 {
     color: #006d77;
  }
 
@@ -48,4 +48,12 @@ section::before {
 
 .border-custom {
     border-color: #006d77;
+}
+
+.bg-custom3 {
+    background-color: #83c5be;
+}
+
+.bg-custom4 {
+    background-color: #d62828;
 }
