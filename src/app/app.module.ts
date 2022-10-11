@@ -96,7 +96,7 @@ import { TriggersDisplayComponent } from './triggers-display/triggers-display.co
       { path: 'create-an-account', component: CreateAnAccountComponent },
     ]), 
   ],
-  providers: [CommentsService,CommentFormComponent, FormBuilder],
+  providers: [CommentsService, CommentFormComponent, FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
