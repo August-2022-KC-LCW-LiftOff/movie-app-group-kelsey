@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModel } from '@angular/forms';
-//import { CommentsComponent } from '../comments/comments.components';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-movie-list',
@@ -8,15 +7,15 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./movie-list.component.css']
 })
 
-// @NgModel({
-//   imports: [CommentsComponent],
-// })
-
 export class MovieListComponent implements OnInit {
 
-  constructor() { }
+  movieResults = [];
+
+  constructor(private location: Location) { }
 
   ngOnInit() {
+    const history: any = this.location.getState();
+    this.movieResults = history?.movieSearchResults;
   }
 
 }

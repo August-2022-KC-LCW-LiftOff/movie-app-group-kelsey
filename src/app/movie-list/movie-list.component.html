@@ -1,2 +1,68 @@
-<h1>Movie List</h1>
-<p>movie-list works!</p>
+<section class="grad merriweather text-custom">
+  <div class="container bg-custom2 p-5">
+    <div class="container border border-5 border-warning rounded-4">
+
+      <!-- Movie Title & Release Date -->
+      <div class="row">
+        <div class="col-12 pt-5 text-custom text-center">
+          <h1>{{ movieResults[0].title }}</h1>
+        </div>
+        <div class="col-12">
+          <p class="container h4 text-center merriweather">
+            {{ movieResults[0].release_date }}
+          </p>
+        </div>
+
+        <!-- Movie Poster- -->
+
+        <div class="bg-custom d-none d-sm-block">
+          <div class="container">
+            <div class="row d-flex justify-content-center bg-custom p-5">
+              <img
+                class="image-fluid d-none d-sm-block w-50"
+                src="https://image.tmdb.org/t/p/w500{{
+                  movieResults[0].poster_path
+                }}"
+                alt="movie poster"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Description -->
+
+        <div class="row d-flex">
+          <div class="col-12 bg-custom2 px-5">
+            <p class="h2 text-center text-custom pb-2">Movie Description</p>
+            <p class="lead text-start text-custom pb-5 px-5">
+              {{ movieResults[0].overview }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Triggers Form -->
+
+    <div class="container py-5">
+      <div class="card col-4">
+        <div class="card-header bg-custom4 text-white text-center h4">Trigger Warnings</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+      </div>
+      <app-add-trigger-form></app-add-trigger-form>
+      <comments></comments>
+
+      <!-- Button -->
+
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-info text-white" [routerLink]="['']">
+          Back Home
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

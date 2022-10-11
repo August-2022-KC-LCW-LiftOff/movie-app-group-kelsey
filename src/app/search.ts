@@ -1,3 +1,4 @@
 export interface Search {
-    search: string;
+    movie: string;
+    year: number;
 }

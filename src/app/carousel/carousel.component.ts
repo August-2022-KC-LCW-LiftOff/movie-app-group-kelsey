@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiMovieService } from '../api-movie.service';
-import { ApiResponse, Movie } from '../types-global';
+import { ApiResponse } from '../types-global';
 
 @Component({
   selector: 'app-carousel',

@@ -9,23 +9,38 @@ import { AddReviewComponent } from './add-review/add-review.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { CommentsComponent } from './comments/comments.components';
 import { CommentsModule } from './comments/comments.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CommentFormComponent } from './commentForm/commentForm.component';
-import { CommentComponent } from './comment/comment.component';
 import { CommentsService } from './comments/comments.service';
 import { FormBuilder } from '@angular/forms';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { CreateAnAccountComponent } from './create-an-account/create-an-account.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireMessagingModule } from '@angular/fire/compat/messaging';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireFunctionsModule } from '@angular/fire/compat/functions';
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
-import { SignupButtonComponent } from './components/signup-button/signup-button.component';
-import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
+import { LogoutButtonComponent } from './logout-button/logout-button.component';
 import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
+import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
+import { FormsModule } from '@angular/forms';
+import { ProfileComponent } from './pages/profile/profile/profile.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { FooterComponent } from './footer/footer.component';
+import { ShowcaseComponent } from './showcase/showcase.component';
+import { SignInButtonComponent } from './sign-in-button/sign-in-button.component';
+import { FaqSectionComponent } from './faq-section/faq-section.component';
+import { DriveInImageComponent } from './drive-in-image/drive-in-image.component';
+import { TriggersDisplayComponent } from './triggers-display/triggers-display.component';
 
 @NgModule({
   declarations: [
@@ -37,21 +52,39 @@ import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
     MovieListComponent,
     CarouselComponent,
     NavbarComponent,
-    CommentsComponent,
-    CommentFormComponent,
-    CommentComponent,
     SignInPageComponent,
     CreateAnAccountComponent,
     LoginButtonComponent,
-    SignupButtonComponent,
     LogoutButtonComponent,
     AuthenticationButtonComponent,
-    AuthNavComponent
+    AuthNavComponent,
+    AddTriggerFormComponent,
+    SearchResultsComponent,
+    ProfileComponent,
+    ScrollToTopComponent,
+    FooterComponent,
+    ShowcaseComponent,
+    SignInButtonComponent,
+    FaqSectionComponent,
+    DriveInImageComponent,
+    TriggersDisplayComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AuthModule.forRoot({...env.auth,}),
+    AngularFireModule.initializeApp(env.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFireMessagingModule,
+    AngularFireDatabaseModule,
+    AngularFireFunctionsModule,
+    AppRoutingModule,
+    CommentsModule,
+    FormsModule,
+    AuthModule.forRoot({
+      ...env.auth,
+    }),
     AppRoutingModule, 
         RouterModule.forRoot([
       { path: '', component: HomeComponent },
