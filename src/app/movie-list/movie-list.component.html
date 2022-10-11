@@ -9,28 +9,29 @@
   class="center"
 />
 <p>{{ movieResults[0].overview }}</p>
-<div *ngIf="triggerWarnings.length > 0" class="card" style="width: 18rem">
-  <div class="card-header" style="color: #D62828">Trigger Warning</div>
-  <div *ngFor="let trigger of triggerWarnings">
-    <p>Headline: {{trigger.headline}}</p>
-    <p>Warning: {{trigger.warning}}</p>
-    <p>Trigger Category: {{trigger.category}}</p>
-    <p *ngIf="trigger.subcategory">Subcategory: {{trigger.subcategory}}</p>
+
+<div *ngFor="let trigger of triggerWarnings">
+<div class="card" style="width: 26rem">
+  <strong><div class="card-header text-center" style="color: #D62828">Trigger Warning: {{trigger.headline}}</div></strong>
+  <div>
+    <p>
+      <strong><span style="color: #006D77">Description: </span></strong>
+      {{trigger.warning}}</p>
+    <p>
+      <strong><span style="color: #006D77">Trigger Category: </span></strong>
+      {{trigger.category}}</p>
+    <p>
+      <strong><span style="color: #006D77">Subcategory: </span></strong>
+      {{trigger.subcategory}}</p>
   </div>
 </div>
-
-  <div *ngIf="triggerWarnings.length > 1" class="card" style="width: 18rem">
-    <div class="card-header" style="color: #D62828">Trigger Warning</div>
-    <div *ngFor="let trigger of triggerWarnings">
-      <p>Headline: {{trigger.headline}}</p>
-      <p>Warning: {{trigger.warning}}</p>
-      <p>Trigger Category: {{trigger.category}}</p>
-      <p *ngIf="trigger.subcategory">Subcategory: {{trigger.subcategory}}</p>
-    </div>
+<p>   </p>
 </div>
 
 <div>
   <p> </p>
+  <p> </p>
 </div>
+<h3 style="color: #D62828">Leave a Trigger Warning</h3>
 <app-add-trigger-form></app-add-trigger-form>
-<comments></comments>
+<!-- <comments></comments> -->

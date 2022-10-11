@@ -12,7 +12,6 @@ import { TriggerWarning } from '../types-global';
     
     async addWarning(warning: any) {
         await this.db.collection('warning').add(warning)
-        console.log("Please work!")
     
 }
 

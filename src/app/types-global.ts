@@ -3,7 +3,7 @@ export type Trigger = {
     title: string,
     id: number;
     categoryDescription: string, 
-    subcategories?: string[];
+    subcategories: string[];
     resourcePhone?: string[];
 }
 
@@ -38,6 +38,6 @@ export type TriggerWarning = {
     movieId: string;
     warning: string; 
     category: string;
-    subcategory?: string;
+    subcategory: string;
     userId?: string;
 }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { WarningService } from 'src/app/services/warning-service'
 
-
 @Component({
   selector: 'app-movie-list',
   templateUrl: './movie-list.component.html',
@@ -28,4 +27,10 @@ export class MovieListComponent implements OnInit {
     this.triggerWarnings = await this.warningService.getWarnings(title);
     console.log(this.triggerWarnings);
   }  
+
+  // async displayNewWarning(title) {
+  //   await this.addTriggerFormComponent.onSubmit();
+  //   this.triggerWarnings = await this.warningService.getWarnings(title);
+  //   console.log(this.triggerWarnings);
+  // }
 }
