@@ -41,6 +41,11 @@ section::before {
     height: 80px;
 }
 
+.bg-custom {
+    /* background: #fff6e5; */
+    background-color: #FFFBF2;
+ }
+
 .grad {
     min-height: 100%;
     background-image: linear-gradient(572deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,
