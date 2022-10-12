@@ -1,1 +1,0 @@
-{"ast":null,"code":"export var ActiveCommentTypeEnum = /*#__PURE__*/(() => {\n  (function (ActiveCommentTypeEnum) {\n    ActiveCommentTypeEnum[\"replying\"] = \"replying\";\n    ActiveCommentTypeEnum[\"editing\"] = \"editing\";\n  })(ActiveCommentTypeEnum || (ActiveCommentTypeEnum = {}));\n\n  return ActiveCommentTypeEnum;\n})();","map":null,"metadata":{},"sourceType":"module"}
