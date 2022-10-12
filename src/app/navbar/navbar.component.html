@@ -1,6 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<nav
+  class="navbar navbar-expand-lg navbar-dark navbar-custom p-4 fixed-top merriweather"
+>
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Triggered</a>
+    <a class="navbar-brand" [routerLink]="['']">Triggered</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -20,26 +22,17 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['trigger-categories']"
+          <a class="nav-link text-nowrap" [routerLink]="['trigger-categories']"
             >View Triggers</a
           >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['add-review']">Create A Review</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['faq-page']">FAQ</a>
         </li>
       </ul>
       <app-search-results></app-search-results>
-      <button
-          class="btn btn-outline-info"
-          (click)="onSignIn()"
-          type="sign-in"
-        >
-          Sign In
-        </button>
-        <app-logout-button></app-logout-button>
+      <app-sign-in-button></app-sign-in-button>
+      <app-logout-button></app-logout-button>
     </div>
   </div>
 </nav>

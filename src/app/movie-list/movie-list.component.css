@@ -1,10 +1,4 @@
-div {
-  
-    background-size: 100% 100%;
-  
-  }
-
-  .grad {
+.grad {
     min-height: 100%;
     background-image: linear-gradient(572deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,
     rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, 
@@ -17,14 +11,6 @@ div {
      rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(356deg, rgb(251,207,73),rgb(131,197,190));
 }
 
-.container-sm {
-    max-width: 540px,
-}
-
-.merriweather {
-    font-family: "Merriweather", serif;
-
-}
 
 .deep-purple {
     color: #3A2E39;
@@ -34,22 +20,40 @@ div {
     color: #FCBF49;
 }
 
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-.center {
+section::before {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+    content: '';
+    height: 80px;
+}
 
+.merriweather {
+    font-family: "Merriweather", serif;
+}
+
+.text-custom {
+    color: #3a2e39;
+ }
+
+.text-custom2 {
+    color: #006d77;
+ }
+
+.bg-custom2 {
+    background-color: #FFFBF2;
+}
+
+.btn-custom {
+    background-color: #83c5be
+}
+
+.border-custom {
+    border-color: #006d77;
+}
+
+.bg-custom3 {
+    background-color: #83c5be;
+}
+
+.bg-custom4 {
+    background-color: #d62828;
+}

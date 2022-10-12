@@ -1,13 +1,5 @@
-/* .login {
-    position: absolute;
-    top: 100px;
-    left: 75%;
-    margin-left: -550px; 
-} */
-
 .merriweather {
     font-family: "Merriweather", serif;
-
 }
 
 body{
@@ -22,7 +14,7 @@ body{
         background: linear-gradient(150deg, #3A2E39 33%, #FCBF49 34%, #006D77 66%, #83C5BE 67%);
         text-align: center;
         padding: 30px 30px 50px;
-
+        height: 79.5vh
 }
     
 .form-container .title{
@@ -124,4 +116,41 @@ body{
     font-weight: 600;
     letter-spacing: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset
+}
+
+.form-horizontal .create{
+    color: #fff;
+    background-color: #FCBF49;
+    font-size: 17px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease 0s
+}
+
+.form-horizontal .create:hover, .form-horizontal .create:focus{
+    font-weight: 600;
+    letter-spacing: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset
+}
+
+section::before {
+    display: block;
+    content: '';
+    height: 80px;
+  }
+ 
+.grad {
+    min-height: 100%;
+    background-image: linear-gradient(572deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,
+    rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, 
+    rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(619deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%
+    ,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, 
+    rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(406deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,
+    rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%,
+     rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(455deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%
+     ,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, 
+     rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(356deg, rgb(251,207,73),rgb(131,197,190));
 }
