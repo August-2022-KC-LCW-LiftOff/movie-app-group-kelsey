@@ -14,7 +14,7 @@ body{
         background: linear-gradient(150deg, #3A2E39 33%, #FCBF49 34%, #006D77 66%, #83C5BE 67%);
         text-align: center;
         padding: 30px 30px 50px;
-        height: 79.5vh;
+        height: 58vh;
 }
     
 .form-container .title{
@@ -138,7 +138,7 @@ body{
 section::before {
     display: block;
     content: '';
-    height: 80px;
+    height: 238px;
   }
 
 .grad {
