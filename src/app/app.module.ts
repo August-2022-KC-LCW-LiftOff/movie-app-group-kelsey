@@ -32,7 +32,7 @@ import { AuthenticationButtonComponent } from './components/authentication-butto
 import { AuthNavComponent } from './components/auth-nav/auth-nav.component';
 import { AddTriggerFormComponent } from './add-trigger-form/add-trigger-form.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './pages/profile/profile/profile.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { FooterComponent } from './footer/footer.component';
@@ -72,7 +72,7 @@ import { TriggersDisplayComponent } from './triggers-display/triggers-display.co
   imports: [
     BrowserModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(env.firebase),
+    AngularFireModule.initializeApp(env.firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
@@ -82,6 +82,7 @@ import { TriggersDisplayComponent } from './triggers-display/triggers-display.co
     AppRoutingModule,
     CommentsModule,
     FormsModule,
+    ReactiveFormsModule,
     AuthModule.forRoot({
       ...env.auth,
     }),

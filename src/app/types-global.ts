@@ -3,7 +3,7 @@ export type Trigger = {
     title: string,
     id: number;
     categoryDescription: string, 
-    subcategories?: string[];
+    subcategories: string[];
     resourcePhone?: string[];
 }
 
@@ -30,4 +30,14 @@ export type ApiResponse = {
     results: Movie[],
     total_results: number,
     total_pages: number
+}
+
+export type TriggerWarning = {
+    headline: string;
+    movieTitle: string;
+    movieId: string;
+    warning: string; 
+    category: string;
+    subcategory: string;
+    userId?: string;
 }

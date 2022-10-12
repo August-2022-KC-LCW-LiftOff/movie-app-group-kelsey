@@ -49,7 +49,8 @@
     {
         "title": "Ending is sad",
         "id": 7, 
-        "categoryDescription": "It may be important for a viewer to know if the ending of the film could be considered sad or disappointing"
+        "categoryDescription": "It may be important for a viewer to know if the ending of the film could be considered sad or disappointing",
+        "subcategories": ["Ending is sad"]
     },
     {
         "title": "Frightening animals",
@@ -69,7 +70,7 @@
         "title": "Hate speech/slurs",
         "id": 10, 
         "categoryDescription": "Hate speech is speech expressing hatred of a particular group of people, and a slur is an insulting or disparaging remoark or innuendo; viewers may find hate speech troubling", 
-        "subcategories": ["Racist slur", "Homophobic slur", "Xenophobic slur", "Ableist slur"]
+        "subcategories": ["Racist slur", "Homophobic slur", "Transphobic slur", "Xenophobic slur", "Ableist slur", "Antisemitic slur", "Other offensive slur"]
     },
     {
         "title": "Historical event depicted",
@@ -81,7 +82,8 @@
     {
         "title": "Jump scare",
         "id": 12, 
-        "categoryDescription": "A jump scare is a technique used in visual media intended to scare the audience by surprising them with an abrupt change in image or event, usually co-occurring with a loud, jarring sound; jump scares can be very triggering to some viewers"
+        "categoryDescription": "A jump scare is a technique used in visual media intended to scare the audience by surprising them with an abrupt change in image or event, usually co-occurring with a loud, jarring sound; jump scares can be very triggering to some viewers",
+        "subcategories": ["Sudden loud noise", "Sudden flashing light", "Sudden frightening motion"]
     }, 
     {
         "title": "Medical scene or medical emergency",
