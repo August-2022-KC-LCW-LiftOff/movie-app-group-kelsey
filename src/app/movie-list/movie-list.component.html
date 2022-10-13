@@ -58,31 +58,39 @@
 <p>{{ movieResults[0].overview }}</p> -->
 
 
+<div class="container p-5 mx-5">
+  <div *ngFor="let trigger of triggerWarnings">
+    <div class="row pt-4">
+      <div class="card col-4">
+        <strong><div class="card-header text-center bg-custom4 text-white">Trigger Warning: {{trigger.headline}}</div></strong>
+        <div>
+          <p>
+            <strong><span class="lead text-custom2">Description: </span></strong>
+            {{trigger.warning}}</p>
+          <p>
+            <strong><span class="lead text-custom2">Trigger Category: </span></strong>
+            {{trigger.category}}</p>
+          <p>
+            <strong><span class="lead text-custom2">Subcategory: </span></strong>
+            {{trigger.subcategory}}</p>
+        </div>
+      </div>
+    </div>
 
-<div *ngFor="let trigger of triggerWarnings">
-<div class="card" style="width: 26rem">
-  <strong><div class="card-header text-center" style="color: #D62828">Trigger Warning: {{trigger.headline}}</div></strong>
+  <p>   </p>
+  </div>
+
   <div>
-    <p>
-      <strong><span style="color: #006D77">Description: </span></strong>
-      {{trigger.warning}}</p>
-    <p>
-      <strong><span style="color: #006D77">Trigger Category: </span></strong>
-      {{trigger.category}}</p>
-    <p>
-      <strong><span style="color: #006D77">Subcategory: </span></strong>
-      {{trigger.subcategory}}</p>
+    <p> </p>
+    <p> </p>
   </div>
 </div>
-<p>   </p>
-</div>
 
-<div>
-  <p> </p>
-  <p> </p>
-</div>
-<h3 style="color: #D62828">Leave a Trigger Warning</h3>
+
+<h2 style="color: #D62828">Leave a Trigger Warning</h2>
 <app-add-trigger-form></app-add-trigger-form>
+
+
 <!-- <comments></comments> -->
 
       <!-- Button -->
