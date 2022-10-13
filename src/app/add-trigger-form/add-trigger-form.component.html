@@ -1,20 +1,30 @@
-<form novalidate>
-  <div class="form-group merriweather col-12 mt-5 h4">
-    <label>Review Headline</label>
-    <input type="text" class="form-control" />
-  </div>
-  <div class="form-group merriweather mt-3 h4">
-    <label>Movie Title</label>
-    <input type="email" class="form-control" />
-  </div>
-  <div class="form-group merriweather mt-3 h4">
-    <label>Add Trigger Warning</label>
-    <input type="password" class="form-control" />
-  </div>
+<form novalidate [formGroup]="triggerWarningForm" (ngSubmit)="onSubmit()">
+
   <div class="form-group merriweather">
-    <!-- <label>Add Trigger Tags</label> -->
+    <label>Headline</label>
+    <input class="form-control" type="text" formControlName="headline" name="headline"/>
+  </div>
+
+  <div class="form-group merriweather">
+    <label>Movie Title</label>
+    <input
+      class="form-control"
+      formControlName="movieTitle"
+      name="movieTitle"
+    />
+  </div>
+
+  <div class="form-group merriweather">
+    <label>Describe Trigger Warning</label>
+    <input class="form-control" formControlName="warning" name="warning" />
+  </div>
+
+  <div class="form-group merriweather">
+    <label>Add Trigger Tags</label>
     <select
       class="form-control"
+      formControlName="category"
+      name="category"
       [(ngModel)]="selectedTrigger"
       (ngModelChange)="onSelectedTriggerChange($event)"
     >
@@ -24,19 +34,26 @@
       </option>
     </select>
   </div>
+
+  
   <div class="form-group merriweather">
-    <select class="form-control">
+    <select
+      class="form-control"
+      formControlName="subcategory"
+      name="subcategory"
+    >
       <option value="">Click to Select Trigger Subcategory</option>
       <option
         *ngFor="let subcategory of triggerSubcategories"
-        [value]="triggerSubcategories"
+        [value]="subcategory"
       >
         {{ subcategory }}
       </option>
     </select>
   </div>
-  <div class="form-group merriweather pt-1">
-    <button class="btn btn-danger btn-block">Add Trigger Review</button>
+  <div class="form-group merriweather">
+    <button class="btn btn-danger btn-block" type="submit">
+      Add Trigger Warning
+    </button>
   </div>
 </form>
-

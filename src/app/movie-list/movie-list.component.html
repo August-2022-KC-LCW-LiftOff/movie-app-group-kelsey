@@ -3,6 +3,7 @@
     <div class="container border border-5 border-warning rounded-4">
 
       <!-- Movie Title & Release Date -->
+
       <div class="row">
         <div class="col-12 pt-5 text-custom text-center">
           <h1>{{ movieResults[0].title }}</h1>
@@ -42,27 +43,62 @@
       </div>
     </div>
 
-    <!-- Add Triggers Form -->
+    <!-- Trigger Warnings -->
 
-    <div class="container py-5">
-      <div class="card col-4">
-        <div class="card-header bg-custom4 text-white text-center h4">Trigger Warnings</div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
+    <div class="container p-5 mx-5">
+      <div *ngFor="let trigger of triggerWarnings">
+        <div class="row pt-4">
+          <div class="card col-4">
+            <strong
+              ><div class="card-header text-center bg-custom4 text-white">
+                Trigger Warning: {{ trigger.headline }}
+              </div></strong
+            >
+            <div>
+              <p>
+                <strong
+                  ><span class="lead text-custom2">Description: </span></strong
+                >
+                {{ trigger.warning }}
+              </p>
+              <p>
+                <strong
+                  ><span class="lead text-custom2"
+                    >Trigger Category:
+                  </span></strong
+                >
+                {{ trigger.category }}
+              </p>
+              <p>
+                <strong
+                  ><span class="lead text-custom2">Subcategory: </span></strong
+                >
+                {{ trigger.subcategory }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p></p>
       </div>
-      <app-add-trigger-form></app-add-trigger-form>
-      <comments></comments>
 
-      <!-- Button -->
-
-      <div class="d-flex justify-content-end">
-        <button class="btn btn-info text-white" [routerLink]="['']">
-          Back Home
-        </button>
+      <div>
+        <p></p>
+        <p></p>
       </div>
+    </div>
+
+    <h2 style="color: #d62828">Leave a Trigger Warning</h2>
+    <app-add-trigger-form></app-add-trigger-form>
+
+    <!-- <comments></comments> -->
+
+    <!-- Button -->
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info text-white" [routerLink]="['']">
+        Back Home
+      </button>
     </div>
   </div>
 </section>
