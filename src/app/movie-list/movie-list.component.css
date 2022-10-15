@@ -61,3 +61,9 @@ section::before {
 bg-custom5 {
     background-color: #FCBF49;
 }
+
+section::before {
+    display: block;
+    content: '';
+    height: 100px;
+}

@@ -8,6 +8,8 @@ import triggersJson from './../../assets/triggers.json';
 })
 export class TriggerCategoriesComponent implements OnInit {
   triggers = triggersJson;
+  openAccordion = [];
+
   constructor() { }
 
   ngOnInit() {

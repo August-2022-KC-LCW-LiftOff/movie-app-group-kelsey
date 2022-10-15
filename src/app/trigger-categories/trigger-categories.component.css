@@ -14,7 +14,7 @@
  section::before {
     display: block;
     content: '';
-    height: 80px;
+    height: 110px;
   }
 
 .grad {
