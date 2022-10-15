@@ -2,7 +2,7 @@
   <div class="container bg-custom text-custom py-5">
     <div class="row text-center">
       <div>
-        <h1>Trigger Categories</h1>
+        <h1 class="pt-3">Trigger Categories</h1>
         <h4>
           We think these elements are upsetting to see in movies, and you might,
           too.
@@ -13,26 +13,31 @@
       <div class="container px-5 mb-5">
         <div
           class="accordion merriweather text-custom bg-custom"
-          id="accordionPanelsStayOpenExample"
-          *ngFor="let trigger of triggers"
+          id="accordionExample"
         >
-          <div class="accordion-item">
-            <h2 class="accordion-header bg-custom" id="panelsStayOpen-heading">
+          <div
+            class="accordion-item"
+            *ngFor="let trigger of triggers; let i = index"
+          >
+            <h2 class="accordion-header" [attr.id]="'heading' + i">
               <button
                 class="accordion-button collapsed"
                 type="button"
+                (click)="openAccordion[i] = !openAccordion[i]"
                 data-bs-toggle="collapse"
-                [attr.data-bs-target]="'#a' + trigger.id"
-                aria-expanded="false"
-                [attr.aria-controls]="'#a' + trigger.id"
+                [attr.data-target]="'#collapse' + i"
+                aria-expanded="true"
+                [attr.aria-controls]="'collapse' + i"
               >
                 {{ trigger.id + ".  " + trigger.title }}
               </button>
             </h2>
             <div
-              [attr.id]="'a' + trigger.id"
+              [attr.id]="'collapse' + i"
               class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingTwo"
+              [class.show]="openAccordion[i]"
+              [attr.aria-labelledby]="'heading' + i"
+              data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <strong>{{ trigger.categoryDescription }}</strong>
@@ -56,4 +61,5 @@
       </div>
     </div>
   </div>
+  <p>&nbsp;</p>
 </section>
