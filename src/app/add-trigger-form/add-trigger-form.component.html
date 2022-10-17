@@ -1,11 +1,11 @@
 <form novalidate [formGroup]="triggerWarningForm" (ngSubmit)="onSubmit()">
 
-  <div class="form-group merriweather">
+  <div class="form-group merriweather mt-4 h4">
     <label>Headline</label>
     <input class="form-control" type="text" formControlName="headline" name="headline"/>
   </div>
 
-  <div class="form-group merriweather">
+  <div class="form-group merriweather mt-3 h4">
     <label>Movie Title</label>
     <input
       class="form-control"
@@ -14,12 +14,12 @@
     />
   </div>
 
-  <div class="form-group merriweather">
+  <div class="form-group merriweather mt-3 h4">
     <label>Describe Trigger Warning</label>
     <input class="form-control" formControlName="warning" name="warning" />
   </div>
 
-  <div class="form-group merriweather">
+  <div class="form-group merriweather mt-3 h4">
     <label>Add Trigger Tags</label>
     <select
       class="form-control"
@@ -51,7 +51,7 @@
       </option>
     </select>
   </div>
-  <div class="form-group merriweather">
+  <div class="form-group merriweather pt-2">
     <button class="btn btn-danger btn-block" type="submit">
       Add Trigger Warning
     </button>

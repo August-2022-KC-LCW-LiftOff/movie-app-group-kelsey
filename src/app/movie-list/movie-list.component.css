@@ -20,12 +20,6 @@
     color: #FCBF49;
 }
 
-section::before {
-    display: block;
-    content: '';
-    height: 80px;
-}
-
 .merriweather {
     font-family: "Merriweather", serif;
 }
