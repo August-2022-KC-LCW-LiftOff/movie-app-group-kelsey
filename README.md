@@ -1,27 +1,36 @@
 # MovieProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+Visit our app at https://triggered-f9073.web.app/
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Written by @KCMOCane  @srh-golubski  @atwilson88  @Lisa-5
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Description
 
-## Build
+Have you ever watched a movie and witnessed something triggering and thought: “I wish I had been warned about this”? With our app, not only can you create, edit, and delete reviews, you can also search and add trigger warnings and category tags to filter results. Similar to the website, doesthedogdie.com, for avoiding common and more niche triggers.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+##State
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+▪ Users can create an account and log in for full access
+▪ Authorized users can create movie reviews with trigger tags to inform others of triggering content
+Anybody can search a database of movies to see movie reviews and be warned of upsetting content
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+##Technology Stack
 
-## Further help
+▪ Angular
+▪ Bootstrap
+▪ TypeScript
+▪ Firebase (NoSQL)
+▪ Auth0
+▪ The Movie Database (TMDB) API
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+#Enhancements
+
+▪ Unit tests
+▪ Be able to filter for movies that do not contain a certain trigger
+▪ Users can view their own past reviews
+▪ Users can have a list of movies they want to avoid
